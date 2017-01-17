@@ -25,6 +25,7 @@ github提供的一个用来搭建静态网站的服务，一般可用于自己�
 $ git clone https://github.com/vimplus/vimplus.github.io.git
 ```
 使用编辑器添加一个`index.html`，内容为：
+
 ```
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -37,6 +38,7 @@ $ git clone https://github.com/vimplus/vimplus.github.io.git
 </body>
 </html>
 ```
+
 保存完了之后推送到你的git仓库，在地址栏输入：`https://vimplus.github.io`，搞定！
 
 ## 拓展阅读
