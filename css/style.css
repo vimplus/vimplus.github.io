@@ -382,16 +382,14 @@ code.highlighter-rouge {
     line-height: 50px;
     border-bottom: 1px dashed #e6e6e6;
 }
-
 .article-list-item .post-meta {
     float: right;
 }
-
 .article-list-title {
     font-size: 20px;
 }
 
-.article-list-item .date {
+.article-list-item .date-label {
     font-size: 14px;
 }
 .year-category-margin-top {
