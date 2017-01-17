@@ -3,7 +3,7 @@
   <head>
     <meta content='3分钟搭建github-Pages - 乐潇游' property='og:title' />
     <title>3分钟搭建github-Pages - 乐潇游</title>
-    <link rel="canonical" href="http://localhost:4000/2017/01/17/first-article/" />
+    <link rel="canonical" href="http://localhost:4000/2017/01/17/3minutes-build-github-pages/" />
 <meta charset="UTF-8" />
 
 <!-- Set the viewport width to device width for mobile -->
@@ -14,12 +14,12 @@
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-<link rel='stylesheet' id='foundation-css'  href='http://localhost:4000/stylesheets/foundation.css?ver=4.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='aude-layout-css'  href='http://localhost:4000/stylesheets/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='foundation-css'  href='http://localhost:4000/stylesheets/syntax.css' type='text/css' media='all' />
-<script type='text/javascript' src='http://localhost:4000/javascripts/jquery.js'></script>
+<link rel='stylesheet' id='foundation-css'  href='http://localhost:4000/css/foundation.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='aude-layout-css'  href='http://localhost:4000/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='foundation-css'  href='http://localhost:4000/css/syntax.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://localhost:4000/js/jquery.js'></script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-<script type='text/javascript' src='http://localhost:4000/javascripts/modernizr.foundation.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://localhost:4000/js/modernizr.foundation.js?ver=4.5.3'></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -103,8 +103,9 @@ MathJax.Hub.Config({
 
 <p>仓库名为：<code class="highlighter-rouge">username.github.io</code>，<code class="highlighter-rouge">username</code> : 为你的github用户名。</p>
 
-<p>如图：
-<img src="http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png" alt="github-pages-demo" /></p>
+<p>如图：</p>
+
+<p><img src="http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png" alt="github-pages-demo" /></p>
 <blockquote>
   <p><strong>一定记得把<code class="highlighter-rouge">username</code>改成你的github用户名!</strong></p>
 </blockquote>
@@ -114,10 +115,13 @@ MathJax.Hub.Config({
 
 <h2 id="二上手">二、上手</h2>
 <p>将刚刚创建的仓库<code class="highlighter-rouge">git clone</code>到你的本地，例如我的：</p>
+
 <div class="highlighter-rouge"><pre class="highlight"><code>$ git clone https://github.com/vimplus/vimplus.github.io.git
 </code></pre>
 </div>
+
 <p>使用编辑器添加一个<code class="highlighter-rouge">index.html</code>，内容为：</p>
+
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"zh-cmn-Hans"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;head&gt;</span>
@@ -130,6 +134,7 @@ MathJax.Hub.Config({
 <span class="nt">&lt;/html&gt;</span>
 </code></pre>
 </div>
+
 <p>保存完了之后推送到你的git仓库，在地址栏输入：<code class="highlighter-rouge">https://vimplus.github.io</code>，搞定！</p>
 
 <h2 id="拓展阅读">拓展阅读</h2>

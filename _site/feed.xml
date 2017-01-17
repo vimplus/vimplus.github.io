@@ -18,8 +18,9 @@
 
 &lt;p&gt;仓库名为：&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt; : 为你的github用户名。&lt;/p&gt;
 
-&lt;p&gt;如图：
-&lt;img src=&quot;http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png&quot; alt=&quot;github-pages-demo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;如图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png&quot; alt=&quot;github-pages-demo&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;一定记得把&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt;改成你的github用户名!&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -29,10 +30,13 @@
 
 &lt;h2 id=&quot;二上手&quot;&gt;二、上手&lt;/h2&gt;
 &lt;p&gt;将刚刚创建的仓库&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;到你的本地，例如我的：&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/vimplus/vimplus.github.io.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 &lt;p&gt;使用编辑器添加一个&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;，内容为：&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;zh-cmn-Hans&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
@@ -45,6 +49,7 @@
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 &lt;p&gt;保存完了之后推送到你的git仓库，在地址栏输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;https://vimplus.github.io&lt;/code&gt;，搞定！&lt;/p&gt;
 
 &lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读&lt;/h2&gt;
@@ -52,8 +57,8 @@
 
 </description>
         <pubDate>Tue, 17 Jan 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/01/17/first-article/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/01/17/first-article/</guid>
+        <link>http://localhost:4000/2017/01/17/3minutes-build-github-pages/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/17/3minutes-build-github-pages/</guid>
       </item>
     
       <item>
@@ -119,8 +124,8 @@
 &lt;p&gt;The end.&lt;/p&gt;
 </description>
         <pubDate>Wed, 31 Aug 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2016/08/31/introduction/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/08/31/introduction/</guid>
+        <link>http://localhost:4000/2016/08/31/first-article/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/08/31/first-article/</guid>
       </item>
     
   </channel>
