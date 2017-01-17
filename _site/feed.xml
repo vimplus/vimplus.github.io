@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>乐潇游</title>
+    <description>快乐，潇洒，自游儿~</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>3分钟搭建github-Pages</title>
+        <description>&lt;h2 id=&quot;什么是github-pages&quot;&gt;什么是github-Pages？&lt;/h2&gt;
+&lt;p&gt;github提供的一个用来搭建静态网站的服务，一般可用于自己的博客。&lt;/p&gt;
+
+&lt;h2 id=&quot;一起步&quot;&gt;一、起步&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;创建一个git仓库：&lt;a href=&quot;https://github.com/new&quot;&gt;Create a new repository&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;仓库名为：&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt; : 为你的github用户名。&lt;/p&gt;
+
+&lt;p&gt;如图：
+&lt;img src=&quot;http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png&quot; alt=&quot;github-pages-demo&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;一定记得把&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt;改成你的github用户名!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。
+然后点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt;完成仓库创建。&lt;/p&gt;
+
+&lt;h2 id=&quot;二上手&quot;&gt;二、上手&lt;/h2&gt;
+&lt;p&gt;将刚刚创建的仓库&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;到你的本地，例如我的：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/vimplus/vimplus.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;使用编辑器添加一个&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;，内容为：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;zh-cmn-Hans&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;首页&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;Hello, World！&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;保存完了之后推送到你的git仓库，在地址栏输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;https://vimplus.github.io&lt;/code&gt;，搞定！&lt;/p&gt;
+
+&lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;github-Pages官网&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 17 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/01/17/first-article/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/17/first-article/</guid>
+      </item>
+    
+      <item>
+        <title>Introduction</title>
+        <description>&lt;p&gt;Morbi venenatis enim sed dui elementum pellentesque. Sed sit amet ex scelerisque mi luctus vehicula. Nullam libero metus, consectetur in est eget, consectetur viverra dui.&lt;/p&gt;
+
+&lt;h4 id=&quot;block-quotes&quot;&gt;Block quotes&lt;/h4&gt;
+&lt;p&gt;Fusce blandit, ipsum et rutrum efficitur, ipsum nibh bibendum justo, a gravida enim dui ut urna. Nunc sit amet tellus in ex venenatis eleifend at eu velit. Cras tincidunt luctus magna, pellentesque imperdiet purus semper a. Donec ut nisi sem.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In eu volutpat odio, ac feugiat nulla. Nam non nisi dui. In pellentesque pretium bibendum. Nullam volutpat purus vel congue venenatis. In hac habitasse platea dictumst. Donec auctor dignissim justo, volutpat consectetur leo. Cras vitae diam nec dui gravida interdum. Donec aliquam in ante a auctor. Vivamus sagittis diam et diam lobortis, at convallis tortor tincidunt. Donec sit amet sagittis metus, et pharetra metus. Praesent semper eget risus vel ultrices.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;code-listing&quot;&gt;Code listing&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem risus, lobortis sed elit quis, facilisis eleifend ex.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+ * The HelloWorldApp class implements an application that
+ * simply displays &quot;Hello World!&quot; to the standard output.
+ */&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorldApp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Display the string.&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;lists&quot;&gt;Lists&lt;/h4&gt;
+&lt;p&gt;Aliquam leo metus, vulputate vel dignissim et, sagittis eget enim. Sed porttitor mi id diam facilisis, quis dapibus dolor pellentesque. In urna libero, efficitur ac pulvinar quis, semper nec nisi.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
+  &lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+  &lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;images&quot;&gt;Images&lt;/h4&gt;
+&lt;p&gt;Vestibulum in odio sit amet leo fringilla cursus. Pellentesque nec odio libero. Sed metus ante, congue non eros vitae, luctus mollis diam. Vivamus eu justo vel mauris auctor ultrices. Vivamus sed enim lobortis, finibus dui mollis, ultricies velit. In vitae elementum mauris, iaculis blandit nulla&lt;/p&gt;
+
+&lt;div class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;img src=&quot;/images/sample-image.jpg&quot; alt=&quot;Sample 600 x 400 image&quot; /&gt;
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Sample 600 x 400 image
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;list&quot;&gt;List&lt;/h4&gt;
+&lt;p&gt;Phasellus erat lorem, imperdiet in ultricies sed, ultricies ac neque. Nulla blandit quam et turpis sollicitudin feugiat. Praesent id turpis ut diam facilisis elementum.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First ordered list item&lt;/li&gt;
+  &lt;li&gt;Another item
+    &lt;ul&gt;
+      &lt;li&gt;Unordered sub-list.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Actual numbers don’t matter, just that it’s a number&lt;/li&gt;
+  &lt;li&gt;Ordered sub-list&lt;/li&gt;
+  &lt;li&gt;And another item.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The end.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Aug 2016 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/08/31/introduction/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/08/31/introduction/</guid>
+      </item>
+    
+  </channel>
+</rss>
