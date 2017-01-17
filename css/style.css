@@ -96,6 +96,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+p:empty  {
+    padding: 0;
+}
 
 iframe {
     margin: 10px 0 15px;
@@ -375,24 +378,22 @@ code.highlighter-rouge {
 
 /* Archived list  ---------------------- */
 
-.article-list-item-title {
+.article-list-item {
+    line-height: 50px;
     border-bottom: 1px dashed #e6e6e6;
 }
 
-.article-list-item-title span {
-    font-size: 16px;
-    line-height: 28px;
-}
-
-.article-list-item-title .post-meta {
+.article-list-item .post-meta {
     float: right;
 }
 
-.article-list-item-title:hover {
-    background: #191919;
-    color: #fff;
+.article-list-title {
+    font-size: 20px;
 }
 
+.article-list-item .date {
+    font-size: 14px;
+}
 .year-category-margin-top {
     margin-top: 1em;
 }

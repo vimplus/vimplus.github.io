@@ -7,9 +7,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>3分钟搭建github-Pages</title>
-        <description>&lt;h2 id=&quot;什么是github-pages&quot;&gt;什么是github-Pages？&lt;/h2&gt;
-&lt;p&gt;github提供的一个用来搭建静态网站的服务，一般可用于自己的博客。&lt;/p&gt;
+        <title>3分钟学会搭建github-Pages</title>
+        <description>&lt;p&gt;github-Pages提供一个用来搭建静态网站的服务，一般可用于自己的博客。&lt;/p&gt;
 
 &lt;h2 id=&quot;一起步&quot;&gt;一、起步&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -31,13 +30,13 @@
 &lt;h2 id=&quot;二上手&quot;&gt;二、上手&lt;/h2&gt;
 &lt;p&gt;将刚刚创建的仓库&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;到你的本地，例如我的：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/vimplus/vimplus.github.io.git
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/vimplus/vimplus.github.io.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;使用编辑器添加一个&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;，内容为：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;zh-cmn-Hans&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;

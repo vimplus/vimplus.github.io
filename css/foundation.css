@@ -172,9 +172,8 @@ form.custom .custom.disabled { background-color: #dddddd; }
 
 /* The Grid ---------------------- */
 .row { width: 1240px; max-width: 100%; min-width: 768px; margin: 0 auto; }
-.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row .row { width: auto; max-width: none; min-width: 0; padding: 5px 0 30px; margin: 0 -15px;}
 .row.collapse .column, .row.collapse .columns { padding: 0; }
-.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
 .row .row.collapse { margin: 0; }
 
 .column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }

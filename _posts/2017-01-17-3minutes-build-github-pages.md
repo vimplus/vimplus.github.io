@@ -1,11 +1,12 @@
 ---
-title: 3分钟搭建github-Pages
+title: 3分钟学会搭建github-Pages
+date: 2017-01-17
+description: "github搭建博客站点"
 layout: post
+tag: [git, blog]
 comments: true
 ---
-
-## 什么是github-Pages？
-github提供的一个用来搭建静态网站的服务，一般可用于自己的博客。
+github-Pages提供一个用来搭建静态网站的服务，一般可用于自己的博客。
 
 ## 一、起步
 > 创建一个git仓库：[Create a new repository][1]
@@ -23,13 +24,13 @@ github提供的一个用来搭建静态网站的服务，一般可用于自己�
 ## 二、上手
 将刚刚创建的仓库`git clone`到你的本地，例如我的：
 
-```
+```shell
 $ git clone https://github.com/vimplus/vimplus.github.io.git
 ```
 
 使用编辑器添加一个`index.html`，内容为：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
