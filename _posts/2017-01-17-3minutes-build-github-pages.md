@@ -21,9 +21,11 @@ github提供的一个用来搭建静态网站的服务，一般可用于自己�
 
 ## 二、上手
 将刚刚创建的仓库`git clone`到你的本地，例如我的：
+
 ```
 $ git clone https://github.com/vimplus/vimplus.github.io.git
 ```
+
 使用编辑器添加一个`index.html`，内容为：
 
 ```
