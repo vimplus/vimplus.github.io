@@ -50,5 +50,5 @@ $ git clone https://github.com/vimplus/vimplus.github.io.git
 
 
   [1]: https://github.com/new
-  [2]: http://static.zybuluo.com/Lxyour/04ds0g2jrvet3xoomnm2le7d/image_1b6lnjup71l89quh1d3917pk6371g.png
+  [2]: http://static.zybuluo.com/Lxyour/strty2wadqehppjmg84bq8cm/image_1b6ogd42or7jvnt8os9r61mrs13.png
   [3]: https://pages.github.com/
