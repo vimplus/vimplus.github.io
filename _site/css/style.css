@@ -22,14 +22,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    margin: 8px 0;
+    font-weight: bold;
     font-style: normal;
-    color: #222;
-    text-rendering: optimizeLegibility;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    font-family: "Microsoft Yahei", "Sentinel SSm A", "Sentinel SSm B", Georgia, sans-serif;
+    font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 2;
+    color: #555;
 }
 
 h1 small,
@@ -44,31 +42,31 @@ h6 small {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 28px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 27px;
+    font-size: 18px;
 }
 
 h4 {
-    font-size: 23px;
+    font-size: 16px;
 }
 
 h5 {
-    font-size: 17px;
-}
-
-h6 {
     font-size: 14px;
 }
 
+h6 {
+    font-size: 12px;
+}
+
 a {
-    color: #000;
+    color: #3cb6f5;
     text-decoration: none;
     line-height: inherit;
 }
@@ -82,11 +80,11 @@ a {
 }
 
 a:hover {
-    color: #2F2F2F;
+    color: #36a9e5;
 }
 
 a:focus {
-    color: #2F2F2F;
+    color: #36a9e5;
 }
 
 p {
@@ -382,16 +380,14 @@ code.highlighter-rouge {
     line-height: 50px;
     border-bottom: 1px dashed #e6e6e6;
 }
-
 .article-list-item .post-meta {
     float: right;
 }
-
 .article-list-title {
     font-size: 20px;
 }
 
-.article-list-item .date {
+.article-list-item .date-label {
     font-size: 14px;
 }
 .year-category-margin-top {
