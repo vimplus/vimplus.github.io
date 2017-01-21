@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-vimplus">
 
 <head>
     <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
@@ -26,17 +26,23 @@
                             <div>
                                 <header class="post_title">
                                     <div class="row">
-                                        <div class="one columns">
-                                            <time class="dateline" datetime="{{ page.date | date: '%B %d, %Y'}}">{{ page.date | date: '%Y-%m-%d'}}</time>
-                                        </div>
-                                        <div class="eleven columns">
+                                        <div class="article-title">
                                             <h1>{{ page.title }}</h1>
                                         </div>
-                                        <div class="card">
-                                            {% for tag in page.tag %}
-                                            <span id="{{ tag }}-ref">{{ tag }}</span>
-                                            {% endfor %}
+                                        <div class="article-info">
+                                            <time class="dateline" datetime="{{ page.date | date: '%B %d, %Y'}}">{{ page.date | date: '%Y-%m-%d'}}</time>
+                                            <div class="article-tags">
+                                                {% for tag in page.tag %}
+                                                <a id="{{ tag }}-ref">{{ tag }}</a>
+                                                {% endfor %}
+                                            </div>
                                         </div>
+                                        <!--<div class="one columns">
+                                            <time class="dateline" datetime="{{ page.date | date: '%B %d, %Y'}}"></time>
+                                        </div>-->
+
+
+                                    </div>
                                 </header>
                                 <div class="row">
                                     <div class="maincontent">
@@ -45,20 +51,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                {% if page.comments %} {% include disqus.html %} {% endif %}
-                                </div>
+                                {% if page.comments %} {% include duoshuo.html %} {% endif %}
+                            </div>
                         </article>
-                        </div>
                     </div>
                 </div>
-                <!-- End Post -->
             </div>
-            <aside class="two columns fixed">
-                <div class="row sidebar ">
-                </div>
-            </aside>
+            <!-- End Post -->
         </div>
-        {% include footer.html %}
+        <aside class="two columns fixed">
+            <div class="row sidebar"></div>
+        </aside>
+    </div>
+    {% include footer.html %}
 </body>
 
 </html>

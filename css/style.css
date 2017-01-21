@@ -4,14 +4,14 @@ Theme URI: http://newbiettn.com
 */
 
 body {
-    background: #fff;
-    font-family: "Microsoft Yahei", "Sentinel SSm A", "Sentinel SSm B", Georgia, sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    position: relative;
     font-size: 12px;
     line-height: 1;
     color: #333;
-    position: relative;
+    font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background: #fff;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
 }
@@ -66,9 +66,10 @@ h6 {
 }
 
 a {
-    color: #3cb6f5;
+    color: #3194d0;
     text-decoration: none;
     line-height: inherit;
+    transition: all .3s ease
 }
 
 .maincontent a {
@@ -92,9 +93,10 @@ p {
     font-family: inherit;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
-p:empty  {
+
+p:empty {
     padding: 0;
 }
 
@@ -113,7 +115,7 @@ iframe {
 }
 
 .border-top-normal {
-    border-top: 1px solid #000;
+    border-top: 1px solid #aaa;
 }
 
 .fixed {
@@ -204,8 +206,8 @@ h1.logo {
 }
 
 p.motto {
-    font-size: 11px;
-    letter-spacing: 4px
+    font-size: 14px;
+    letter-spacing: 4px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -214,7 +216,7 @@ p.motto {
     }
     ul.social li {
         padding: 8px 3px 0;
-        border-right: 0
+        border-right: 0;
     }
 }
 
@@ -268,7 +270,7 @@ nav .dropdown {
 /* Post ---------------------- */
 
 .info {
-    border-bottom: 1px solid #E4E5E7;
+    border-bottom: 1px solid #e4e5e7;
     padding: 15px 0px;
 }
 
@@ -300,6 +302,32 @@ article {
     min-height: 250px;
 }
 
+.article-title {}
+
+.article-info {
+    line-height: 30px;
+    color: #888;
+}
+
+.article-tags {
+    display: inline-block;
+}
+.article-tags a {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 1px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #888;
+    border: 1px solid #bfbfbf;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+.article-tags a:hover {
+    color: #36a9e5;
+    border-color: #36a9e5;
+}
+
 article h2 {
     padding: 0;
     margin: 0;
@@ -325,12 +353,17 @@ article h2 a {
 }
 
 .post_title .dateline {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 p.written {
     font-size: 16px;
     color: #999;
+}
+
+.footer-rights {
+    font-size: 14px;
+    color: #888;
 }
 
 .hentry p.written a {
@@ -362,18 +395,23 @@ div.aligncenter {
     margin: 10px 0;
     padding: 20px 10px;
     border-radius: 4px;
+    overflow-y: auto;
+}
+
+code {
+    line-height: 20px;
 }
 
 code.highlighter-rouge {
-    background: #fafafa none repeat scroll 0 0 !important;
-    border-color: #ddd !important;
+    /*border-color: #ddd !important;
     border-style: solid !important;
-    border-width: 1px !important;
-    font-family: "Microsoft Yahei", Monaco, "MonacoRegular", "Courier New", monospace;
-    text-shadow: none !important;
-    font-size: 14px;
-    color: #002d7a !important;
+    border-width: 1px !important;*/
     padding: 2px 5px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", Monaco, "MonacoRegular", "Courier New", monospace;
+    color: #3b4d64;
+    background: #e6e6e6 none repeat scroll 0 0;
     border-radius: 4px;
 }
 
@@ -384,9 +422,11 @@ code.highlighter-rouge {
     line-height: 50px;
     border-bottom: 1px dashed #e6e6e6;
 }
+
 .article-list-item .post-meta {
     float: right;
 }
+
 .article-list-title {
     font-size: 20px;
 }
@@ -394,6 +434,7 @@ code.highlighter-rouge {
 .article-list-item .date-label {
     font-size: 14px;
 }
+
 .year-category-margin-top {
     margin-top: 1em;
 }
@@ -477,4 +518,236 @@ footer .text-center {
 
 .col-9 {
     width: 11.111%
+}
+
+
+/* DIY duoshuo theme */
+
+.theme-vimplus #ds-thread #ds-reset {
+    color: #555;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-replybox {
+    /*margin-bottom: 30px;*/
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-replybox .ds-avatar,
+.theme-vimplus #ds-reset .ds-avatar img {
+    box-shadow: none;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-textarea-wrapper {
+    border-color: #c7d4e1;
+    background: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-textarea-wrapper textarea {
+    height: 60px;
+}
+
+.theme-vimplus #ds-reset .ds-rounded-top {
+    border-radius: 0;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-post-toolbar {
+    box-sizing: border-box;
+    border: 1px solid #c7d4e1;
+    background: #f6f8fa;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-post-options {
+    height: 40px;
+    border: none;
+    background: none;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-toolbar-buttons {
+    top: 11px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-sync {
+    top: 5px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-post-button {
+    top: 4px;
+    right: 5px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #c5ced7;
+    border-radius: 3px;
+    background-image: linear-gradient(#fbfbfc, #f5f7f9);
+    color: #60676d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-post-button:hover {
+    background-position: 0 -30px;
+    color: #60676d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-comments-info {
+    padding: 10px 0;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-sort {
+    display: none;
+}
+
+.theme-vimplus #ds-thread #ds-reset li.ds-tab a.ds-current {
+    border: none;
+    background: #f6f8fa;
+    color: #60676d;
+}
+
+.theme-vimplus #ds-thread #ds-reset li.ds-tab a.ds-current:hover {
+    background-color: #e9f0f7;
+    color: #60676d;
+}
+
+.theme-vimplus #ds-thread #ds-reset li.ds-tab a {
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-login-buttons p {
+    color: #999;
+    line-height: 36px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
+    height: 28px;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list a {
+    background: none;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list a:hover {
+    color: #fff;
+    background: #666;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-weibo {
+    color: #e6162d;
+    border-color: #e6162d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-weibo:hover {
+    background: #e6162d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-qq {
+    color: #13b7f6;
+    border-color: #13b7f6;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-qq:hover {
+    background: #13b7f6;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-renren {
+    color: #217dc6;
+    border-color: #217dc6;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-renren:hover {
+    background: #217dc6;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-douban {
+    color: #2e963d;
+    border-color: #2e963d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-douban:hover {
+    background: #2e963d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-kaixin {
+    color: #fc9b00;
+    border-color: #fc9b00;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-kaixin:hover {
+    background: #fc9b00;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-netease {
+    color: #f00;
+    border-color: #f00;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-netease:hover {
+    background: #f00;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-sohu {
+    color: #ffcb05;
+    border-color: #ffcb05;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-sohu:hover {
+    background: #ffcb05;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-baidu {
+    color: #2932e1;
+    border-color: #2932e1;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-baidu:hover {
+    background: #2932e1;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-google {
+    color: #4285f4;
+    border-color: #4285f4;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-google:hover {
+    background: #4285f4;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-weixin {
+    color: #00ce0d;
+    border-color: #00ce0d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-weixin:hover {
+    background: #00ce0d;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-more-services {
+    border: none;
+}
+
+.theme-vimplus #ds-thread #ds-reset .ds-service-list .ds-more-services:hover {
+    background: none;
+}
+
+.theme-vimplus #ds-reset .duoshuo-ua-admin {
+    display: inline-block;
+    color: #f00;
+}
+
+.theme-vimplus #ds-reset .duoshuo-ua-platform,
+.theme-vimplus #ds-reset .duoshuo-ua-browser {
+    color: #ccc;
+}
+
+.theme-vimplus #ds-reset .duoshuo-ua-platform .fa,
+.theme-vimplus #ds-reset .duoshuo-ua-browser .fa {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.theme-vimplus #ds-reset .duoshuo-ua-separator {
+    display: inline-block;
+    margin-left: 5px;
 }

@@ -11,7 +11,7 @@
 
 
 
-.highlight, img, p > nobr > code, li > code, h5 > code, p > pre, p > code, .note > code { color: tomato; background-color: #333;}
+.highlight, img, p > nobr > code, li > code, h5 > code, p > pre, p > code, .note > code { color: #0cc6de; background-color: #293252;}
 
 .hll { background-color: #ffc }
  /*{ background: #f0f3f3; }*/
