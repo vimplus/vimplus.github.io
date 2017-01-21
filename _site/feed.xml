@@ -7,6 +7,106 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>基于jekyll轻松搭建Github-Pages博客</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;有时候看到一些大牛的博客简洁，版式美观，一看就是markdown的风格，所以一直很想自己弄一个版式简洁，支持markdown的独立博客。&lt;/p&gt;
+
+&lt;p&gt;刚接触前端的时候只知道有那些WordPress这种博客系统，自己也曾经搭建过，但是觉得太复杂，要自己买服务器、备案之类的，重点是自己写的本地markdown笔记文件还不能直接任意搬迁上去，恕我井底蛙，隔了好久后来终于发现原来有一种叫做 &lt;strong&gt;jekyll&lt;/strong&gt; 的博客系统（还有一种叫hexo，喜欢hexo的朋友也可以玩一下），于是如同发现新大陆，立马实践一把。&lt;/p&gt;
+
+&lt;h2 id=&quot;特点&quot;&gt;特点&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;无需数据库&lt;/li&gt;
+  &lt;li&gt;无缝对接markdown&lt;/li&gt;
+  &lt;li&gt;页面静态化（将markdown生成HTML）&lt;/li&gt;
+  &lt;li&gt;支持博客相关的所有功能，如归档、标签，评论等等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;准备&quot;&gt;准备&lt;/h2&gt;
+&lt;p&gt;首先看看你的系统有没有&lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby环境&lt;/code&gt;，没有的自行安装(这里主要介绍的是Mac OS X下的教程)，比如Windows用户（自从自己用了Mac编程之后再也不想用自己那台Windows笔记本了）。&lt;/p&gt;
+
+&lt;p&gt;身为共产主义接班人有必要先把gem源设置修改一下，我们来使用淘宝的ruby镜像源：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;安装jekyll&quot;&gt;安装jekyll&lt;/h2&gt;
+&lt;p&gt;设置好之后执行以下命令：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一般情况下可能会报错(没有权限)：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;While executing gem ... (Gem::FilePermissionError)
+You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;那就使用：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;接下来执行&lt;code class=&quot;highlighter-rouge&quot;&gt;bundler install&lt;/code&gt;，这样jekyll已经安装好了。&lt;/p&gt;
+
+&lt;h2 id=&quot;新建jekyll项目&quot;&gt;新建jekyll项目&lt;/h2&gt;
+&lt;p&gt;使用以下命令快速创建一个jekyll站点的经典目录结构：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll new myBlog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后访问到该目录，执行：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd myBlog
+$ jekyll server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;打开浏览器，输入：http://localhost:4000/
+这样一个基本的jekyll站点就建立好了。&lt;/p&gt;
+
+&lt;h2 id=&quot;创建github-pages&quot;&gt;创建Github-Pages&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;首先创建一个git仓库：&lt;a href=&quot;https://github.com/new&quot;&gt;Create a new repository&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;仓库名为：&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt; : 为你的github用户名。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;一定记得把&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt;改成你的github用户名!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。
+然后点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt;完成仓库创建。&lt;/p&gt;
+
+&lt;h2 id=&quot;推送到github&quot;&gt;推送到Github&lt;/h2&gt;
+&lt;p&gt;将你刚刚创建的jekyll站点代码推送到你新创建的&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;仓库。
+然后访问你的github-Pages页面地址，比如我的：https://vimplus.github.io&lt;/p&gt;
+
+&lt;p&gt;到这里你的Github-Pages博客站点就大功告成啦！&lt;/p&gt;
+
+&lt;h2 id=&quot;博客主题&quot;&gt;博客主题&lt;/h2&gt;
+&lt;p&gt;作为强迫症的我怎能容忍丑陋的博客页面，当然是找&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll主题&lt;/a&gt;或者自己设计，找到喜欢的主题后下载主题代码自行替换你站点目录的代码（你可以全部替换，因为一个主题就是有基本功能的jekyll站点）。&lt;/p&gt;
+
+&lt;h2 id=&quot;最后&quot;&gt;最后&lt;/h2&gt;
+&lt;p&gt;如果你根据我这篇并不那么详细的教程搭建出属于你自己的博客，那么恭喜你，欢迎入坑！
+更多坑自行Google搜索吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimplus.github.io/2017/01/17/3minutes-build-github-pages/&quot;&gt;3分钟学会搭建github-Pages&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/01/20/build-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/20/build-jekyll-blog/</guid>
+      </item>
+    
+      <item>
         <title>3分钟学会搭建github-Pages</title>
         <description>&lt;p&gt;github-Pages提供一个用来搭建静态网站的服务，一般可用于自己的博客。&lt;/p&gt;
 
