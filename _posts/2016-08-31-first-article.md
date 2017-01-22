@@ -3,6 +3,7 @@ title: Introduction
 date: 2016-08-31
 description: "Introduction"
 layout: post
+categories: theme
 tag: theme
 comments: true
 ---

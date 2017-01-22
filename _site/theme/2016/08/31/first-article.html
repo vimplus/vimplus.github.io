@@ -2,9 +2,9 @@
 <html class="theme-vimplus">
 
 <head>
-    <meta content='3分钟学会搭建github-Pages - 乐潇游' property='og:title' />
-    <title>3分钟学会搭建github-Pages - 乐潇游</title>
-    <link rel="canonical" href="http://localhost:4000/2017/01/17/3minutes-build-github-pages/" />
+    <meta content='Introduction - 乐潇游' property='og:title' />
+    <title>Introduction - 乐潇游</title>
+    <link rel="canonical" href="http://localhost:4000/theme/2016/08/31/first-article.html" />
 <meta charset="UTF-8" />
 
 <!-- Set the viewport width to device width for mobile -->
@@ -84,80 +84,93 @@ MathJax.Hub.Config({
                                 <header class="post_title">
                                     <div class="row">
                                         <div class="article-title">
-                                            <h1>3分钟学会搭建github-Pages</h1>
+                                            <h1>Introduction</h1>
                                         </div>
+                                        
                                         <div class="article-info">
-                                            <time class="dateline" datetime="January 17, 2017">2017-01-17</time>
+                                            <time class="dateline" datetime="August 31, 2016">2016-08-31</time>
                                             <div class="article-tags">
                                                 
-                                                <a id="git-ref">git</a>
-                                                
-                                                <a id="blog-ref">blog</a>
+                                                <a id="theme-ref">theme</a>
                                                 
                                             </div>
                                         </div>
                                         <!--<div class="one columns">
-                                            <time class="dateline" datetime="January 17, 2017"></time>
+                                            <time class="dateline" datetime="August 31, 2016"></time>
                                         </div>-->
 
 
                                     </div>
                                 </header>
                                 <div class="row">
+                                    
                                     <div class="maincontent">
                                         <div class="twelve columns">
-                                            <p>github-Pages提供一个用来搭建静态网站的服务，一般可用于自己的博客。</p>
+                                            <p>Morbi venenatis enim sed dui elementum pellentesque. Sed sit amet ex scelerisque mi luctus vehicula. Nullam libero metus, consectetur in est eget, consectetur viverra dui.</p>
 
-<h2 id="一起步">一、起步</h2>
+<h4 id="block-quotes">Block quotes</h4>
+<p>Fusce blandit, ipsum et rutrum efficitur, ipsum nibh bibendum justo, a gravida enim dui ut urna. Nunc sit amet tellus in ex venenatis eleifend at eu velit. Cras tincidunt luctus magna, pellentesque imperdiet purus semper a. Donec ut nisi sem.</p>
+
 <blockquote>
-  <p>创建一个git仓库：<a href="https://github.com/new">Create a new repository</a></p>
+  <p>In eu volutpat odio, ac feugiat nulla. Nam non nisi dui. In pellentesque pretium bibendum. Nullam volutpat purus vel congue venenatis. In hac habitasse platea dictumst. Donec auctor dignissim justo, volutpat consectetur leo. Cras vitae diam nec dui gravida interdum. Donec aliquam in ante a auctor. Vivamus sagittis diam et diam lobortis, at convallis tortor tincidunt. Donec sit amet sagittis metus, et pharetra metus. Praesent semper eget risus vel ultrices.</p>
 </blockquote>
 
-<p>仓库名为：<code class="highlighter-rouge">username.github.io</code>，<code class="highlighter-rouge">username</code> : 为你的github用户名。</p>
+<h4 id="code-listing">Code listing</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem risus, lobortis sed elit quis, facilisis eleifend ex.</p>
 
-<p>如图：</p>
-
-<p><img src="http://static.zybuluo.com/Lxyour/strty2wadqehppjmg84bq8cm/image_1b6ogd42or7jvnt8os9r61mrs13.png" alt="github-pages-demo" /></p>
-<blockquote>
-  <p><strong>一定记得把<code class="highlighter-rouge">username</code>改成你的github用户名!</strong></p>
-</blockquote>
-
-<p>比如我的用户名是<code class="highlighter-rouge">vimplus</code>，同理仓库名就是<code class="highlighter-rouge">vimplus.github.io</code>。
-然后点击<code class="highlighter-rouge">Create repository</code>完成仓库创建。</p>
-
-<h2 id="二上手">二、上手</h2>
-<p>将刚刚创建的仓库<code class="highlighter-rouge">git clone</code>到你的本地，例如我的：</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git clone https://github.com/vimplus/vimplus.github.io.git
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+ * The HelloWorldApp class implements an application that
+ * simply displays "Hello World!" to the standard output.
+ */</span>
+<span class="kd">class</span> <span class="nc">HelloWorldApp</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span> <span class="c1">//Display the string.</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre>
 </div>
 
-<p>使用编辑器添加一个<code class="highlighter-rouge">index.html</code>，内容为：</p>
+<h4 id="lists">Lists</h4>
+<p>Aliquam leo metus, vulputate vel dignissim et, sagittis eget enim. Sed porttitor mi id diam facilisis, quis dapibus dolor pellentesque. In urna libero, efficitur ac pulvinar quis, semper nec nisi.</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"zh-cmn-Hans"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>首页<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div&gt;</span>Hello, World！<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
+<ul>
+  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+  <li>Donec id elit non mi porta gravida at eget metus.</li>
+  <li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<h4 id="images">Images</h4>
+<p>Vestibulum in odio sit amet leo fringilla cursus. Pellentesque nec odio libero. Sed metus ante, congue non eros vitae, luctus mollis diam. Vivamus eu justo vel mauris auctor ultrices. Vivamus sed enim lobortis, finibus dui mollis, ultricies velit. In vitae elementum mauris, iaculis blandit nulla</p>
+
+<div class="wp-caption aligncenter">
+  <img src="/images/sample-image.jpg" alt="Sample 600 x 400 image" />
+  <p class="wp-caption-text">
+    Sample 600 x 400 image
+  </p>
 </div>
 
-<p>保存完了之后推送到你的git仓库，在地址栏输入：<code class="highlighter-rouge">https://vimplus.github.io</code>，搞定！</p>
+<h4 id="list">List</h4>
+<p>Phasellus erat lorem, imperdiet in ultricies sed, ultricies ac neque. Nulla blandit quam et turpis sollicitudin feugiat. Praesent id turpis ut diam facilisis elementum.</p>
 
-<h2 id="拓展阅读">拓展阅读</h2>
-<p><a href="https://pages.github.com/">github-Pages官网</a></p>
+<ol>
+  <li>First ordered list item</li>
+  <li>Another item
+    <ul>
+      <li>Unordered sub-list.</li>
+    </ul>
+  </li>
+  <li>Actual numbers don’t matter, just that it’s a number</li>
+  <li>Ordered sub-list</li>
+  <li>And another item.</li>
+</ol>
 
+<p>The end.</p>
 
                                         </div>
                                     </div>
                                 </div>
                                  <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="/2017/01/17/3minutes-build-github-pages" data-title="3分钟学会搭建github-Pages" data-url="http://localhost:4000/2017/01/17/3minutes-build-github-pages"></div>
+	<div class="ds-thread" data-thread-key="/theme/2016/08/31/first-article" data-title="Introduction" data-url="http://localhost:4000/theme/2016/08/31/first-article"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

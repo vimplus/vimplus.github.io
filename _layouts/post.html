@@ -29,6 +29,7 @@
                                         <div class="article-title">
                                             <h1>{{ page.title }}</h1>
                                         </div>
+                                        
                                         <div class="article-info">
                                             <time class="dateline" datetime="{{ page.date | date: '%B %d, %Y'}}">{{ page.date | date: '%Y-%m-%d'}}</time>
                                             <div class="article-tags">
@@ -45,6 +46,9 @@
                                     </div>
                                 </header>
                                 <div class="row">
+                                    {% if page.image %}
+                                        <img width="100%" style="height:auto;" src="{{page.image}}">
+                                        {% endif %}
                                     <div class="maincontent">
                                         <div class="twelve columns">
                                             {{ content }}

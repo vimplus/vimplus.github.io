@@ -68,7 +68,7 @@ $ jekyll server
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;打开浏览器，输入：http://localhost:4000/
+&lt;p&gt;打开浏览器，输入：http://localhost:4000/&lt;br /&gt;
 这样一个基本的jekyll站点就建立好了。&lt;/p&gt;
 
 &lt;h2 id=&quot;创建github-pages&quot;&gt;创建Github-Pages&lt;/h2&gt;
@@ -81,11 +81,11 @@ $ jekyll server
   &lt;p&gt;&lt;strong&gt;一定记得把&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt;改成你的github用户名!&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。
+&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。&lt;br /&gt;
 然后点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt;完成仓库创建。&lt;/p&gt;
 
 &lt;h2 id=&quot;推送到github&quot;&gt;推送到Github&lt;/h2&gt;
-&lt;p&gt;将你刚刚创建的jekyll站点代码推送到你新创建的&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;仓库。
+&lt;p&gt;将你刚刚创建的jekyll站点代码推送到你新创建的&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;仓库。&lt;br /&gt;
 然后访问你的github-Pages页面地址，比如我的：https://vimplus.github.io&lt;/p&gt;
 
 &lt;p&gt;到这里你的Github-Pages博客站点就大功告成啦！&lt;/p&gt;
@@ -94,16 +94,16 @@ $ jekyll server
 &lt;p&gt;作为强迫症的我怎能容忍丑陋的博客页面，当然是找&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll主题&lt;/a&gt;或者自己设计，找到喜欢的主题后下载主题代码自行替换你站点目录的代码（你可以全部替换，因为一个主题就是有基本功能的jekyll站点）。&lt;/p&gt;
 
 &lt;h2 id=&quot;最后&quot;&gt;最后&lt;/h2&gt;
-&lt;p&gt;如果你根据我这篇并不那么详细的教程搭建出属于你自己的博客，那么恭喜你，欢迎入坑！
+&lt;p&gt;如果你根据我这篇并不那么详细的教程搭建出属于你自己的博客，那么恭喜你，欢迎入坑！&lt;br /&gt;
 更多坑自行Google搜索吧。&lt;/p&gt;
 
 &lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://vimplus.github.io/2017/01/17/3minutes-build-github-pages/&quot;&gt;3分钟学会搭建github-Pages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimplus.github.io/github/2017/01/17/3minutes-build-github-pages.html&quot;&gt;3分钟学会搭建github-Pages&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/01/20/build-jekyll-blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/01/20/build-jekyll-blog/</guid>
+        <pubDate>Fri, 20 Jan 2017 15:12:21 +0000</pubDate>
+        <link>http://localhost:4000/jekyll/2017/01/20/build-jekyll-blog.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2017/01/20/build-jekyll-blog.html</guid>
       </item>
     
       <item>
@@ -124,7 +124,7 @@ $ jekyll server
   &lt;p&gt;&lt;strong&gt;一定记得把&lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt;改成你的github用户名!&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。
+&lt;p&gt;比如我的用户名是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus&lt;/code&gt;，同理仓库名就是&lt;code class=&quot;highlighter-rouge&quot;&gt;vimplus.github.io&lt;/code&gt;。&lt;br /&gt;
 然后点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt;完成仓库创建。&lt;/p&gt;
 
 &lt;h2 id=&quot;二上手&quot;&gt;二、上手&lt;/h2&gt;
@@ -156,8 +156,8 @@ $ jekyll server
 
 </description>
         <pubDate>Tue, 17 Jan 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/01/17/3minutes-build-github-pages/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/01/17/3minutes-build-github-pages/</guid>
+        <link>http://localhost:4000/github/2017/01/17/3minutes-build-github-pages.html</link>
+        <guid isPermaLink="true">http://localhost:4000/github/2017/01/17/3minutes-build-github-pages.html</guid>
       </item>
     
       <item>
@@ -223,8 +223,8 @@ $ jekyll server
 &lt;p&gt;The end.&lt;/p&gt;
 </description>
         <pubDate>Wed, 31 Aug 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2016/08/31/first-article/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/08/31/first-article/</guid>
+        <link>http://localhost:4000/theme/2016/08/31/first-article.html</link>
+        <guid isPermaLink="true">http://localhost:4000/theme/2016/08/31/first-article.html</guid>
       </item>
     
   </channel>

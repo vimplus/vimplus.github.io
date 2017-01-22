@@ -3,7 +3,8 @@ title: 3分钟学会搭建github-Pages
 date: 2017-01-17
 description: "github搭建博客站点"
 layout: post
-tag: [git, blog]
+categories: github
+tag: [github, blog]
 comments: true
 ---
 github-Pages提供一个用来搭建静态网站的服务，一般可用于自己的博客。

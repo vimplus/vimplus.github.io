@@ -1,8 +1,10 @@
 ---
 title: 基于jekyll轻松搭建Github-Pages博客
-date: 2017-01-20
+date: 2017-01-20 15:12:21
+image: http://static.zybuluo.com/Lxyour/oh492likcac61ksx1jwmbdd4/image_1b7291uah169vej2325ctm1vsj9.png
 description: "基于jekyll轻松搭建Github-Pages博客"
 layout: post
+categories: jekyll
 tag: [jekyll,blog]
 comments: true
 ---
@@ -95,4 +97,4 @@ $ jekyll server
 
   [1]: https://github.com/new
   [2]: http://jekyllthemes.org/
-  [3]: https://vimplus.github.io/2017/01/17/3minutes-build-github-pages/
+  [3]: https://vimplus.github.io/github/2017/01/17/3minutes-build-github-pages.html
