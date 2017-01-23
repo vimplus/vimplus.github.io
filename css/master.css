@@ -130,7 +130,7 @@ iframe {
 /* Preloader ---------------------- */
 
 .preloader {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -196,20 +196,198 @@ ul.social li:last-child {
 /* Header  ---------------------- */
 
 .site-header {
-    margin-top: 10px;
-    min-height: 220px;
+    min-height: 120px;
 }
 
-h1.logo {
-    font-size: 64px;
-    padding: 10px 0 3px;
-    font-weight: 400;
+.site-header .hd-height {
+    height: 120px;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
-p.motto {
+.hd-brand,
+.hd-logo,
+.hd-text {
+    float: left;
+}
+
+.hd-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.hd-logo .img-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.hd-text .title {
+    padding: 0;
+    font-size: 28px;
+    line-height: 1.5;
+}
+.hd-text .slogan {
+    padding: 5px 0;
+}
+
+/* Main Part  ---------------------- */
+.main-part {
+    padding: 10px 0;
+}
+
+.content-container {
+    min-height: 600px;
+}
+
+/* Footer  ---------------------- */
+.site-footer {
+    height: 60px;
+}
+
+.footer-rights p {
+    padding: 0;
     font-size: 14px;
-    letter-spacing: 4px;
+    line-height: 60px;
 }
+
+.footer-rights .text-center {
+    text-align: center;
+}
+
+
+/* Nav  ---------------------- */
+.header-nav {
+    float: right;
+    position: relative;
+}
+.vim-navbar {
+    height: 40px;
+    margin-top: 30px;
+}
+.vim-navbar li {
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    margin-left: 15px;
+}
+.vim-navbar li a {
+    display: inline-block;
+    padding: 2px 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.vim-navbar li a:hover {
+    color: #a5def1;
+    border-color: #233142;
+    background: #233142;
+}
+
+/* Touch  ---------------------- */
+.touch h1 {
+    font-size: 24px;
+}
+
+.touch h2 {
+    font-size: 22px;
+}
+
+.touch h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.touch h1,
+.touch h2,
+.touch h3,
+.touch h4,
+.touch h5,
+.touch h6 {
+    line-height: 1.5;
+}
+
+.touch .site-header {
+    padding-left: 10px;
+}
+.touch .header-nav {
+    /*position: absolute;
+    top: 0;
+    right: 0;*/
+    height: 60px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.touch .footer-rights p {
+    font-size: 12px;
+}
+
+
+/*.touch .header-nav {
+    float: none;
+    position: absolute;
+    right: -130px;
+    bottom: 0;
+    top: 0;
+    width: 130px;
+    padding: 20px;
+    background: #
+}
+
+.touch .vim-navbar {
+    width: 90px;
+    height: auto;
+}
+
+.touch .vim-navbar li {
+    float: none;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.touch .vim-navbar li a {
+    width: 100%;
+    box-sizing: border-box;
+}*/
+
+
+/* Theme  ---------------------- */
+.theme-dark,
+.theme-dark .header-nav{
+    color: #fff;
+    background: #36506C;
+}
+
+.theme-dark a {
+    color: #fff;
+}
+
+/*.touch .theme-dark .header-nav{
+    background: #233142;
+}*/
+
+.theme-tint.content {
+    background: #fff;
+    border-radius: 6px;
+}
+.touch .theme-tint.content {
+    border-radius: 0;
+}
+
 
 @media only screen and (max-width: 767px) {
     h1.logo {
@@ -221,25 +399,6 @@ p.motto {
     }
 }
 
-
-/* Navigation  ---------------------- */
-
-.navigation {
-    margin: 15px 0 60px 0;
-    text-align: left;
-    width: 100%;
-    list-style: outside none none;
-    font-weight: bold;
-}
-
-nav {
-    font-size: 12px;
-    margin: 0px auto;
-}
-
-nav .dropdown {
-    display: none;
-}
 
 @media only screen and (max-width: 767px) {
     .motto {
@@ -264,6 +423,17 @@ nav .dropdown {
         float: left;
         display: block;
         width: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        transition: transform 0.3s ease;
+    }
+    body.side-left {
+        -webkit-transform: translate(-130px, 0);
+        -ms-transform: translate(-130px, 0);
+        transform: translate(-130px, 0);
     }
 }
 
@@ -295,12 +465,23 @@ nav .dropdown {
 
 .day,
 .month {
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
-article {
+.article {
     margin-bottom: 60px;
     min-height: 250px;
+}
+
+.article-header {
+    font-weight: normal;
+    padding: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    color: #2F2F2F;
+    border-bottom: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ededed;
 }
 
 .article-title {}
@@ -308,6 +489,10 @@ article {
 .article-info {
     line-height: 30px;
     color: #888;
+}
+
+.article-info .date {
+    font-size: 14px;
 }
 
 .article-tags {
@@ -344,29 +529,10 @@ article h2 a {
     margin: 15px 0;
 }
 
-.post_title {
-    font-weight: normal;
-    padding: 0;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    color: #2F2F2F;
-    border-bottom: 0;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ededed;
-}
-
-.post_title .dateline {
-    font-size: 14px;
-}
 
 p.written {
     font-size: 16px;
     color: #999;
-}
-
-.footer-rights {
-    font-size: 14px;
-    color: #888;
 }
 
 .hentry p.written a {
@@ -440,17 +606,6 @@ code.highlighter-rouge {
 
 .year-category-margin-top {
     margin-top: 1em;
-}
-
-
-/* Footer  ---------------------- */
-
-footer {
-    margin-top: 80px !important;
-}
-
-footer .text-center {
-    margin-top: 20px;
 }
 
 
@@ -581,9 +736,12 @@ footer .text-center {
         display: inline-block;
     }
     .vimplus-pagination .first,
-    .vimplus-pagination .last {
+    .vimplus-pagination .last,
+    .vimplus-pagination .offset-1,
+    .vimplus-pagination .offset-2 {
         display: inline-block;
     }
+    .vimplus-pagination .pages-indicator--offset-1,
     .vimplus-pagination .pages-indicator--offset-2,
     .vimplus-pagination .pages-indicator--offset-3,
     .vimplus-pagination .pages-indicator--offset-4,
@@ -622,50 +780,27 @@ footer .text-center {
 }
 
 @media (min-width: 768px) {
-    .vimplus-pagination .offset-4 {
+    .content {
+        padding: 0 30px;
+    }
+    .vimplus-pagination .offset-4,
+    .vimplus-pagination .offset-5,
+    .vimplus-pagination .offset-6,
+    .vimplus-pagination .offset-7,
+    .vimplus-pagination .offset-8,
+    .vimplus-pagination .offset-9 {
         display: inline-block;
     }
-    .vimplus-pagination .pages-indicator--offset-5 {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .vimplus-pagination .offset-5 {
-        display: inline-block;
-    }
-    .vimplus-pagination .pages-indicator--offset-6 {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .vimplus-pagination .offset-6 {
-        display: inline-block;
-    }
-    .vimplus-pagination .pages-indicator--offset-7 {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .vimplus-pagination .offset-7 {
-        display: inline-block;
-    }
-    .vimplus-pagination .pages-indicator--offset-8 {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .vimplus-pagination .offset-8 {
-        display: inline-block;
-    }
+    .vimplus-pagination .pages-indicator--offset-4,
+    .vimplus-pagination .pages-indicator--offset-5,
+    .vimplus-pagination .pages-indicator--offset-6,
+    .vimplus-pagination .pages-indicator--offset-7,
+    .vimplus-pagination .pages-indicator--offset-8,
     .vimplus-pagination .pages-indicator--offset-9 {
         display: none;
     }
+    
 }
-
 .vimplus-pagination {
     padding: 0;
     margin: 1em 0;

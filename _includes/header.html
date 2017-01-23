@@ -1,27 +1,24 @@
-<header class="row site-header">
-  <div class="two columns">
-  </div>
-  <div class="eight columns ">
-    <div class="row">
-      <a href="{{ site.url }}">
-        <h1 class="logo">{{ site.title }}</h1>
-      </a>
-      <p class="motto">{{ site.description }}</p>
+<header class="site-header theme-dark">
+    <div class="content hd-height">
+        <div class="hd-brand">
+            <div class="hd-logo">
+                <img class="img-logo" src="/images/lxylogo.jpg">
+            </div>
+            <div class="hd-text">
+                <p class="title">{{ site.title }}</p>
+                <p class="slogan">{{ site.description }}</p>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul id="themenu" class="nav-bar">
+                {% for link in site.links %}
+                <li>
+                    <a class="nav-link" target="{% if link.external %}_blank{% else %}_top{% endif %}" href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
+                     {{ link.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
     </div>
-  </div>
-  <div class="two columns fixed">
-    <nav>
-      <ul id="themenu" class="navigation">
-      {% for link in site.links %}
-        <li>
-          <a target="{% if link.external %}_blank{% else %}_top{% endif %}"
-             class="navigation"
-             href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
-             {{ link.name }}
-           </a>
-        </li>
-      {% endfor %}
-      </ul>
-    </nav>
-  </div>
 </header>

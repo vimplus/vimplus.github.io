@@ -60,7 +60,7 @@ small { font-size: 60%; line-height: inherit; }
 
 
 /* Lists ---------------------- */
-ul, ol, dl { font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style-position: outside; }
+ul, ol, dl { font-size: 14px; line-height: 1.6; margin-bottom: 15px; list-style-position: outside; }
 
 ul li ul, ul li ol { margin-left: 20px; margin-bottom: 0; }
 ul.square, ul.circle, ul.disc { margin-left: 17px; }
@@ -171,10 +171,10 @@ form.custom .custom.disabled { background-color: #dddddd; }
 .lt-ie9 form.custom div.custom.dropdown a.selector { height: 28px; }
 
 /* The Grid ---------------------- */
-.row { width: 1240px; max-width: 100%; min-width: 768px; margin: 0 auto; padding: 0 10px; background: #fff;}
-.row .row { width: auto; min-width: 0; max-width: none; padding: 5px 0; /*margin: 0 -8px;*/}
-.row.collapse .column, .row.collapse .columns { padding: 0; }
-.row .row.collapse { margin: 0; }
+.content { width: 1240px; max-width: 100%; min-width: 768px; margin: 0 auto; padding: 0 10px;}
+.content .row { width: auto; min-width: 0; max-width: none; padding: 5px 0; /*margin: 0 -8px;*/}
+.content.collapse .column, .content.collapse .columns { padding: 0; }
+.content .content.collapse { margin: 0; }
 
 .column, .columns { float: left; min-height: 1px; /*padding: 0 15px;*/ position: relative; }
 .column.centered, .columns.centered { float: none; margin: 0 auto; }
@@ -183,49 +183,49 @@ form.custom .custom.disabled { background-color: #dddddd; }
 
 [class*="column"] + [class*="column"].end { float: left; }
 
-.one, .row .one { width: 8.33333%; }
+.one, .content .one { width: 8.33333%; }
 
-.two, .row .two { width: 16.66667%; }
+.two, .content .two { width: 16.66667%; }
 
-.three, .row .three { width: 25%; }
+.three, .content .three { width: 25%; }
 
-.four, .row .four { width: 33.33333%; }
+.four, .content .four { width: 33.33333%; }
 
-.five, .row .five { width: 41.66667%; }
+.five, .content .five { width: 41.66667%; }
 
-.six, .row .six { width: 50%; }
+.six, .content .six { width: 50%; }
 
-.seven, .row .seven { width: 58.33333%; }
+.seven, .content .seven { width: 58.33333%; }
 
-.eight, .row .eight { width: 66.66667%; }
+.eight, .content .eight { width: 66.66667%; }
 
-.nine, .row .nine { width: 75%; }
+.nine, .content .nine { width: 75%; }
 
-.ten, .row .ten { width: 83.33333%; }
+.ten, .content .ten { width: 83.33333%; }
 
-.eleven, .row .eleven { width: 91.66667%; }
+.eleven, .content .eleven { width: 91.66667%; }
 
-.twelve, .row .twelve { width: 100%; }
+.twelve, .content .twelve { width: 100%; }
 
-.row .offset-by-one { margin-left: 8.33333%; }
+.content .offset-by-one { margin-left: 8.33333%; }
 
-.row .offset-by-two { margin-left: 16.66667%; }
+.content .offset-by-two { margin-left: 16.66667%; }
 
-.row .offset-by-three { margin-left: 25%; }
+.content .offset-by-three { margin-left: 25%; }
 
-.row .offset-by-four { margin-left: 33.33333%; }
+.content .offset-by-four { margin-left: 33.33333%; }
 
-.row .offset-by-five { margin-left: 41.66667%; }
+.content .offset-by-five { margin-left: 41.66667%; }
 
-.row .offset-by-six { margin-left: 50%; }
+.content .offset-by-six { margin-left: 50%; }
 
-.row .offset-by-seven { margin-left: 58.33333%; }
+.content .offset-by-seven { margin-left: 58.33333%; }
 
-.row .offset-by-eight { margin-left: 66.66667%; }
+.content .offset-by-eight { margin-left: 66.66667%; }
 
-.row .offset-by-nine { margin-left: 75%; }
+.content .offset-by-nine { margin-left: 75%; }
 
-.row .offset-by-ten { margin-left: 83.33333%; }
+.content .offset-by-ten { margin-left: 83.33333%; }
 
 .push-two { left: 16.66667%; }
 
@@ -272,9 +272,9 @@ img { -ms-interpolation-mode: bicubic; }
 #map_canvas img, .map_canvas img { max-width: none!important; }
 
 /* Nicolas Gallagher's micro clearfix */
-.row { *zoom: 1; }
-.row:before, .row:after { content: " "; display: table; }
-.row:after { clear: both; }
+.content { *zoom: 1; }
+.content:before, .content:after { content: " "; display: table; }
+.content:after { clear: both; }
 
 /* Block Grids ---------------------- */
 /* These are 2-up, 3-up, 4-up and 5-up ULs, suited
@@ -434,15 +434,28 @@ div.button-bar { overflow: hidden; }
 div.button-bar ul.button-group { float: left; margin-right: 8px; }
 div.button-bar ul.button-group:last-child { margin-left: 0; }
 
-.nav-bar { height: 40px; background: #4d4d4d; margin-left: 0; margin-top: 20px; padding: 0; }
-.nav-bar > li { float: left; display: block; position: relative; padding: 0; margin: 0; border: 1px solid #333333; border-right: none; line-height: 38px; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; }
-.nav-bar > li:first-child { -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
-.nav-bar > li:last-child { border-right: solid 1px #333333; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); }
+.nav-bar { height: 40px; margin-left: 0; margin-top: 25px; padding: 0; }
+.nav-bar > li { float: left; display: block; position: relative; padding: 0; margin-left: 20px; font-size: 14px; }
+/*.nav-bar > li:first-child { -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
+.nav-bar > li:last-child { border-right: solid 1px #333333; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); }*/
 .nav-bar > li.active { background: #2ba6cb; border-color: #2284a1; }
 .nav-bar > li.active > a { color: white; cursor: default; }
 .nav-bar > li.active:hover { background: #2ba6cb; cursor: default; }
-.nav-bar > li:hover { background: #333333; }
-.nav-bar > li > a { color: #e6e6e6; }
+.nav-bar > li > a {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+.nav-bar > li a:hover {
+    color: #a5def1;
+    border-color: #233142;
+    background: #233142;
+}
+
 .nav-bar > li ul { margin-bottom: 0; }
 .nav-bar > li .flyout { display: none; }
 .nav-bar > li.has-flyout > a:first-child { padding-right: 40px; position: relative; }
@@ -450,7 +463,7 @@ div.button-bar ul.button-group:last-child { margin-left: 0; }
 .nav-bar > li.has-flyout > a.flyout-toggle { border-left: 0 !important; position: absolute; right: 0; top: 0; padding: 20px; z-index: 2; display: block; }
 .nav-bar > li.has-flyout.is-touch > a:first-child { padding-right: 55px; }
 .nav-bar > li.has-flyout.is-touch > a.flyout-toggle { border-left: 1px dashed #666666; }
-.nav-bar > li > a:first-child { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 14px; }
+/*.nav-bar > li > a:first-child { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 14px; }*/
 .nav-bar > li > input { margin: 0 10px; }
 .nav-bar.vertical { height: auto; margin-top: 0; }
 .nav-bar.vertical > li { float: none; border-bottom: none; border-right: solid 1px #333333; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
@@ -881,7 +894,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
   /* The Grid --- */
   /*              */
-  .row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
+  .content { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
   .column, .columns { width: auto !important; float: none; }
   .column:last-child, .columns:last-child { float: none; }
   [class*="column"] + [class*="column"]:last-child { float: none; }
@@ -891,22 +904,22 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten { left: auto; }
   .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten { right: auto; }
   /* Mobile 4-column Grid */
-  .row .mobile-one { width: 25% !important; float: left; padding: 0 15px; }
-  .row .mobile-one:last-child { float: right; }
-  .row .mobile-one.end { float: left; }
-  .row.collapse .mobile-one { padding: 0; }
-  .row .mobile-two { width: 50% !important; float: left; padding: 0 15px; }
-  .row .mobile-two:last-child { float: right; }
-  .row .mobile-two.end { float: left; }
-  .row.collapse .mobile-two { padding: 0; }
-  .row .mobile-three { width: 75% !important; float: left; padding: 0 15px; }
-  .row .mobile-three:last-child { float: right; }
-  .row .mobile-three.end { float: left; }
-  .row.collapse .mobile-three { padding: 0; }
-  .row .mobile-four { width: 100% !important; float: left; padding: 0 15px; }
-  .row .mobile-four:last-child { float: right; }
-  .row .mobile-four.end { float: left; }
-  .row.collapse .mobile-four { padding: 0; }
+  .content .mobile-one { width: 25% !important; float: left; padding: 0 15px; }
+  .content .mobile-one:last-child { float: right; }
+  .content .mobile-one.end { float: left; }
+  .content.collapse .mobile-one { padding: 0; }
+  .content .mobile-two { width: 50% !important; float: left; padding: 0 15px; }
+  .content .mobile-two:last-child { float: right; }
+  .content .mobile-two.end { float: left; }
+  .content.collapse .mobile-two { padding: 0; }
+  .content .mobile-three { width: 75% !important; float: left; padding: 0 15px; }
+  .content .mobile-three:last-child { float: right; }
+  .content .mobile-three.end { float: left; }
+  .content.collapse .mobile-three { padding: 0; }
+  .content .mobile-four { width: 100% !important; float: left; padding: 0 15px; }
+  .content .mobile-four:last-child { float: right; }
+  .content .mobile-four.end { float: left; }
+  .content.collapse .mobile-four { padding: 0; }
   .push-one-mobile { left: 25%; }
   .pull-one-mobile { right: 25%; }
   .push-two-mobile { left: 50%; }
@@ -945,18 +958,18 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   /* Label alignment */
   label.right { text-align: left; }
   /* Extend width of all inputs */
-  input[type="text"].one, .row input[type="text"].one, input[type="password"].one, .row input[type="password"].one, input[type="date"].one, .row input[type="date"].one, input[type="datetime"].one, .row input[type="datetime"].one, input[type="email"].one, .row input[type="email"].one, input[type="number"].one, .row input[type="number"].one, input[type="search"].one, .row input[type="search"].one, input[type="tel"].one, .row input[type="tel"].one, input[type="time"].one, .row input[type="time"].one, input[type="url"].one, .row input[type="url"].one, textarea.one, .row textarea.one { width: 100% !important; }
-  input[type="text"].two, .row input[type="text"].two, input[type="password"].two, .row input[type="password"].two, input[type="date"].two, .row input[type="date"].two, input[type="datetime"].two, .row input[type="datetime"].two, input[type="email"].two, .row input[type="email"].two, input[type="number"].two, .row input[type="number"].two, input[type="search"].two, .row input[type="search"].two, input[type="tel"].two, .row input[type="tel"].two, input[type="time"].two, .row input[type="time"].two, input[type="url"].two, .row input[type="url"].two, textarea.two, .row textarea.two { width: 100% !important; }
-  input[type="text"].three, .row input[type="text"].three, input[type="password"].three, .row input[type="password"].three, input[type="date"].three, .row input[type="date"].three, input[type="datetime"].three, .row input[type="datetime"].three, input[type="email"].three, .row input[type="email"].three, input[type="number"].three, .row input[type="number"].three, input[type="search"].three, .row input[type="search"].three, input[type="tel"].three, .row input[type="tel"].three, input[type="time"].three, .row input[type="time"].three, input[type="url"].three, .row input[type="url"].three, textarea.three, .row textarea.three { width: 100% !important; }
-  input[type="text"].four, .row input[type="text"].four, input[type="password"].four, .row input[type="password"].four, input[type="date"].four, .row input[type="date"].four, input[type="datetime"].four, .row input[type="datetime"].four, input[type="email"].four, .row input[type="email"].four, input[type="number"].four, .row input[type="number"].four, input[type="search"].four, .row input[type="search"].four, input[type="tel"].four, .row input[type="tel"].four, input[type="time"].four, .row input[type="time"].four, input[type="url"].four, .row input[type="url"].four, textarea.four, .row textarea.four { width: 100% !important; }
-  input[type="text"].five, .row input[type="text"].five, input[type="password"].five, .row input[type="password"].five, input[type="date"].five, .row input[type="date"].five, input[type="datetime"].five, .row input[type="datetime"].five, input[type="email"].five, .row input[type="email"].five, input[type="number"].five, .row input[type="number"].five, input[type="search"].five, .row input[type="search"].five, input[type="tel"].five, .row input[type="tel"].five, input[type="time"].five, .row input[type="time"].five, input[type="url"].five, .row input[type="url"].five, textarea.five, .row textarea.five { width: 100% !important; }
-  input[type="text"].six, .row input[type="text"].six, input[type="password"].six, .row input[type="password"].six, input[type="date"].six, .row input[type="date"].six, input[type="datetime"].six, .row input[type="datetime"].six, input[type="email"].six, .row input[type="email"].six, input[type="number"].six, .row input[type="number"].six, input[type="search"].six, .row input[type="search"].six, input[type="tel"].six, .row input[type="tel"].six, input[type="time"].six, .row input[type="time"].six, input[type="url"].six, .row input[type="url"].six, textarea.six, .row textarea.six { width: 100% !important; }
-  input[type="text"].seven, .row input[type="text"].seven, input[type="password"].seven, .row input[type="password"].seven, input[type="date"].seven, .row input[type="date"].seven, input[type="datetime"].seven, .row input[type="datetime"].seven, input[type="email"].seven, .row input[type="email"].seven, input[type="number"].seven, .row input[type="number"].seven, input[type="search"].seven, .row input[type="search"].seven, input[type="tel"].seven, .row input[type="tel"].seven, input[type="time"].seven, .row input[type="time"].seven, input[type="url"].seven, .row input[type="url"].seven, textarea.seven, .row textarea.seven { width: 100% !important; }
-  input[type="text"].eight, .row input[type="text"].eight, input[type="password"].eight, .row input[type="password"].eight, input[type="date"].eight, .row input[type="date"].eight, input[type="datetime"].eight, .row input[type="datetime"].eight, input[type="email"].eight, .row input[type="email"].eight, input[type="number"].eight, .row input[type="number"].eight, input[type="search"].eight, .row input[type="search"].eight, input[type="tel"].eight, .row input[type="tel"].eight, input[type="time"].eight, .row input[type="time"].eight, input[type="url"].eight, .row input[type="url"].eight, textarea.eight, .row textarea.eight { width: 100% !important; }
-  input[type="text"].nine, .row input[type="text"].nine, input[type="password"].nine, .row input[type="password"].nine, input[type="date"].nine, .row input[type="date"].nine, input[type="datetime"].nine, .row input[type="datetime"].nine, input[type="email"].nine, .row input[type="email"].nine, input[type="number"].nine, .row input[type="number"].nine, input[type="search"].nine, .row input[type="search"].nine, input[type="tel"].nine, .row input[type="tel"].nine, input[type="time"].nine, .row input[type="time"].nine, input[type="url"].nine, .row input[type="url"].nine, textarea.nine, .row textarea.nine { width: 100% !important; }
-  input[type="text"].ten, .row input[type="text"].ten, input[type="password"].ten, .row input[type="password"].ten, input[type="date"].ten, .row input[type="date"].ten, input[type="datetime"].ten, .row input[type="datetime"].ten, input[type="email"].ten, .row input[type="email"].ten, input[type="number"].ten, .row input[type="number"].ten, input[type="search"].ten, .row input[type="search"].ten, input[type="tel"].ten, .row input[type="tel"].ten, input[type="time"].ten, .row input[type="time"].ten, input[type="url"].ten, .row input[type="url"].ten, textarea.ten, .row textarea.ten { width: 100% !important; }
-  input[type="text"].eleven, .row input[type="text"].eleven, input[type="password"].eleven, .row input[type="password"].eleven, input[type="date"].eleven, .row input[type="date"].eleven, input[type="datetime"].eleven, .row input[type="datetime"].eleven, input[type="email"].eleven, .row input[type="email"].eleven, input[type="number"].eleven, .row input[type="number"].eleven, input[type="search"].eleven, .row input[type="search"].eleven, input[type="tel"].eleven, .row input[type="tel"].eleven, input[type="time"].eleven, .row input[type="time"].eleven, input[type="url"].eleven, .row input[type="url"].eleven, textarea.eleven, .row textarea.eleven { width: 100% !important; }
-  input[type="text"].twelve, .row input[type="text"].twelve, input[type="password"].twelve, .row input[type="password"].twelve, input[type="date"].twelve, .row input[type="date"].twelve, input[type="datetime"].twelve, .row input[type="datetime"].twelve, input[type="email"].twelve, .row input[type="email"].twelve, input[type="number"].twelve, .row input[type="number"].twelve, input[type="search"].twelve, .row input[type="search"].twelve, input[type="tel"].twelve, .row input[type="tel"].twelve, input[type="time"].twelve, .row input[type="time"].twelve, input[type="url"].twelve, .row input[type="url"].twelve, textarea.twelve, .row textarea.twelve { width: 100% !important; }
+  input[type="text"].one, .content input[type="text"].one, input[type="password"].one, .content input[type="password"].one, input[type="date"].one, .content input[type="date"].one, input[type="datetime"].one, .content input[type="datetime"].one, input[type="email"].one, .content input[type="email"].one, input[type="number"].one, .content input[type="number"].one, input[type="search"].one, .content input[type="search"].one, input[type="tel"].one, .content input[type="tel"].one, input[type="time"].one, .content input[type="time"].one, input[type="url"].one, .content input[type="url"].one, textarea.one, .content textarea.one { width: 100% !important; }
+  input[type="text"].two, .content input[type="text"].two, input[type="password"].two, .content input[type="password"].two, input[type="date"].two, .content input[type="date"].two, input[type="datetime"].two, .content input[type="datetime"].two, input[type="email"].two, .content input[type="email"].two, input[type="number"].two, .content input[type="number"].two, input[type="search"].two, .content input[type="search"].two, input[type="tel"].two, .content input[type="tel"].two, input[type="time"].two, .content input[type="time"].two, input[type="url"].two, .content input[type="url"].two, textarea.two, .content textarea.two { width: 100% !important; }
+  input[type="text"].three, .content input[type="text"].three, input[type="password"].three, .content input[type="password"].three, input[type="date"].three, .content input[type="date"].three, input[type="datetime"].three, .content input[type="datetime"].three, input[type="email"].three, .content input[type="email"].three, input[type="number"].three, .content input[type="number"].three, input[type="search"].three, .content input[type="search"].three, input[type="tel"].three, .content input[type="tel"].three, input[type="time"].three, .content input[type="time"].three, input[type="url"].three, .content input[type="url"].three, textarea.three, .content textarea.three { width: 100% !important; }
+  input[type="text"].four, .content input[type="text"].four, input[type="password"].four, .content input[type="password"].four, input[type="date"].four, .content input[type="date"].four, input[type="datetime"].four, .content input[type="datetime"].four, input[type="email"].four, .content input[type="email"].four, input[type="number"].four, .content input[type="number"].four, input[type="search"].four, .content input[type="search"].four, input[type="tel"].four, .content input[type="tel"].four, input[type="time"].four, .content input[type="time"].four, input[type="url"].four, .content input[type="url"].four, textarea.four, .content textarea.four { width: 100% !important; }
+  input[type="text"].five, .content input[type="text"].five, input[type="password"].five, .content input[type="password"].five, input[type="date"].five, .content input[type="date"].five, input[type="datetime"].five, .content input[type="datetime"].five, input[type="email"].five, .content input[type="email"].five, input[type="number"].five, .content input[type="number"].five, input[type="search"].five, .content input[type="search"].five, input[type="tel"].five, .content input[type="tel"].five, input[type="time"].five, .content input[type="time"].five, input[type="url"].five, .content input[type="url"].five, textarea.five, .content textarea.five { width: 100% !important; }
+  input[type="text"].six, .content input[type="text"].six, input[type="password"].six, .content input[type="password"].six, input[type="date"].six, .content input[type="date"].six, input[type="datetime"].six, .content input[type="datetime"].six, input[type="email"].six, .content input[type="email"].six, input[type="number"].six, .content input[type="number"].six, input[type="search"].six, .content input[type="search"].six, input[type="tel"].six, .content input[type="tel"].six, input[type="time"].six, .content input[type="time"].six, input[type="url"].six, .content input[type="url"].six, textarea.six, .content textarea.six { width: 100% !important; }
+  input[type="text"].seven, .content input[type="text"].seven, input[type="password"].seven, .content input[type="password"].seven, input[type="date"].seven, .content input[type="date"].seven, input[type="datetime"].seven, .content input[type="datetime"].seven, input[type="email"].seven, .content input[type="email"].seven, input[type="number"].seven, .content input[type="number"].seven, input[type="search"].seven, .content input[type="search"].seven, input[type="tel"].seven, .content input[type="tel"].seven, input[type="time"].seven, .content input[type="time"].seven, input[type="url"].seven, .content input[type="url"].seven, textarea.seven, .content textarea.seven { width: 100% !important; }
+  input[type="text"].eight, .content input[type="text"].eight, input[type="password"].eight, .content input[type="password"].eight, input[type="date"].eight, .content input[type="date"].eight, input[type="datetime"].eight, .content input[type="datetime"].eight, input[type="email"].eight, .content input[type="email"].eight, input[type="number"].eight, .content input[type="number"].eight, input[type="search"].eight, .content input[type="search"].eight, input[type="tel"].eight, .content input[type="tel"].eight, input[type="time"].eight, .content input[type="time"].eight, input[type="url"].eight, .content input[type="url"].eight, textarea.eight, .content textarea.eight { width: 100% !important; }
+  input[type="text"].nine, .content input[type="text"].nine, input[type="password"].nine, .content input[type="password"].nine, input[type="date"].nine, .content input[type="date"].nine, input[type="datetime"].nine, .content input[type="datetime"].nine, input[type="email"].nine, .content input[type="email"].nine, input[type="number"].nine, .content input[type="number"].nine, input[type="search"].nine, .content input[type="search"].nine, input[type="tel"].nine, .content input[type="tel"].nine, input[type="time"].nine, .content input[type="time"].nine, input[type="url"].nine, .content input[type="url"].nine, textarea.nine, .content textarea.nine { width: 100% !important; }
+  input[type="text"].ten, .content input[type="text"].ten, input[type="password"].ten, .content input[type="password"].ten, input[type="date"].ten, .content input[type="date"].ten, input[type="datetime"].ten, .content input[type="datetime"].ten, input[type="email"].ten, .content input[type="email"].ten, input[type="number"].ten, .content input[type="number"].ten, input[type="search"].ten, .content input[type="search"].ten, input[type="tel"].ten, .content input[type="tel"].ten, input[type="time"].ten, .content input[type="time"].ten, input[type="url"].ten, .content input[type="url"].ten, textarea.ten, .content textarea.ten { width: 100% !important; }
+  input[type="text"].eleven, .content input[type="text"].eleven, input[type="password"].eleven, .content input[type="password"].eleven, input[type="date"].eleven, .content input[type="date"].eleven, input[type="datetime"].eleven, .content input[type="datetime"].eleven, input[type="email"].eleven, .content input[type="email"].eleven, input[type="number"].eleven, .content input[type="number"].eleven, input[type="search"].eleven, .content input[type="search"].eleven, input[type="tel"].eleven, .content input[type="tel"].eleven, input[type="time"].eleven, .content input[type="time"].eleven, input[type="url"].eleven, .content input[type="url"].eleven, textarea.eleven, .content textarea.eleven { width: 100% !important; }
+  input[type="text"].twelve, .content input[type="text"].twelve, input[type="password"].twelve, .content input[type="password"].twelve, input[type="date"].twelve, .content input[type="date"].twelve, input[type="datetime"].twelve, .content input[type="datetime"].twelve, input[type="email"].twelve, .content input[type="email"].twelve, input[type="number"].twelve, .content input[type="number"].twelve, input[type="search"].twelve, .content input[type="search"].twelve, input[type="tel"].twelve, .content input[type="tel"].twelve, input[type="time"].twelve, .content input[type="time"].twelve, input[type="url"].twelve, .content input[type="url"].twelve, textarea.twelve, .content textarea.twelve { width: 100% !important; }
   /* Buttons --- */
   /*             */
   /* Basic overrides */
@@ -972,7 +985,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   /* Navbar --- */
   /*            */
   .nav-bar { height: auto; }
-  .nav-bar > li { float: none; display: block; border-right: none; }
+  .nav-bar > li { float: none; display: block; margin-top: 10px; margin-left: 0; text-align: center; border-right: none; }
   .nav-bar > li > a.main { text-align: left; border-top: 1px solid #dddddd; border-right: none; }
   .nav-bar > li:first-child > a.main { border-top: none; }
   .nav-bar > li.has-flyout > a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; display: block; }

@@ -3,7 +3,7 @@ layout: index
 ---
 <div class="row archived-container">
   <div class="twelve columns">
-    <div class="row border-top-normal">
+    <div class="row">
       {% for post in site.posts %}
         {% unless post.next %}
           <h2 class="year-category">{{ post.date | date: '%Y' }}</h2>
@@ -17,8 +17,8 @@ layout: index
         <div class="row">
           <div class="twelve columns">
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="article-list-item-title">
-                  <span>{{ post.title }}</span>
+                <div class="article-list-item">
+                  <span class="article-list-title">{{ post.title }}</span>
                   <span class="post-meta date-label">
                     {{ post.date | date: "%b %d" }}
                   </span>

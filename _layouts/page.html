@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta content='{{ page.title }} - {{ site.title }}' name='title' />
     <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
     <title>{{ page.title }} - {{ site.title }}</title>
     {% include head.html %}
-  </head>
-  <body class="home blog">
-  	<div class="preloader">
-    		<div class="preload-status">&nbsp;</div>
-  	</div>
-  	<!-- Header -->
-    {% include header.html %}
-  	<!-- End Header -->
-    <!-- Main Page Content and Sidebar -->
-    <div class="row">
-      <div class="two columns"></div>
-      <div class="content-container eight columns">
-        <div class="row border-top-normal">
-        <article>
-          <div>
-            <h2 class="post_title">
-              <span>{{page.title}}</span>
-            </h2>
-            {{content}}
-          </div>
-        </article>
-        </div>
-      </div>
-      <aside class="two columns fixed">
-        <div class="row sidebar ">
-        </div>
-      </aside>
+</head>
+
+<body class="blog">
+    <div class="preloader">
+        <div class="preload-status">&nbsp;</div>
     </div>
-    <!-- End Main Page Content and Sidebar -->
-    {% include footer.html %}
-  </body>
+    <div class="wrap">
+        <!-- Header -->
+        {% include header.html %}
+        <!-- End Header -->
+        <!-- Main Page Content and Sidebar -->
+        <div class="main-part">
+            <div class="content theme-tint">
+                <div class="content-container nine columns">
+                    <article class="article">
+                        <h2 class="post_title">
+                          <span>{{page.title}}</span>
+                        </h2>
+                        <div>{{content}}</div>
+                    </article>
+                </div>
+            </div>
+            <div class="sider-bar"></div>
+        </div>
+        <!-- End Main Page Content and Sidebar -->
+        <!-- Footer -->
+        {% include footer.html %}
+        <!-- End Footer -->
+    </div>
+</body>
+
 </html>
