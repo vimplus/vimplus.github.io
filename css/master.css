@@ -196,11 +196,11 @@ ul.social li:last-child {
 /* Header  ---------------------- */
 
 .site-header {
-    min-height: 120px;
+    min-height: 100px;
 }
 
 .site-header .hd-height {
-    height: 120px;
+    min-height: 100px;
     padding: 20px 0;
     box-sizing: border-box;
 }
@@ -212,8 +212,6 @@ ul.social li:last-child {
 }
 
 .hd-logo {
-    width: 80px;
-    height: 80px;
     margin-right: 10px;
 }
 .hd-logo .img-logo {
@@ -242,13 +240,16 @@ ul.social li:last-child {
 
 /* Footer  ---------------------- */
 .site-footer {
-    height: 60px;
+    min-height: 60px;
 }
 
+.footer-rights {
+    padding: 15px 0;
+}
 .footer-rights p {
     padding: 0;
     font-size: 14px;
-    line-height: 60px;
+    line-height: 20px;
 }
 
 .footer-rights .text-center {
@@ -333,6 +334,19 @@ h6 {
 }
 
 .touch .footer-rights p {
+    font-size: 12px;
+}
+
+.touch .img-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.touch .hd-text .title {
+    font-size: 22px;
+    line-height: 1.5;
+}
+.touch .hd-text .slogan {
     font-size: 12px;
 }
 
