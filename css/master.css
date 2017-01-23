@@ -233,11 +233,11 @@ ul.social li:last-child {
 
 /* Main Part  ---------------------- */
 .main-part {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .content-container {
-    min-height: 600px;
+    min-height: 750px;
 }
 
 /* Footer  ---------------------- */
