@@ -73,6 +73,7 @@ $ jekyll server
 > 首先创建一个git仓库：[Create a new repository][1]
 
 仓库名为：`username.github.io`，`username` : 为你的github用户名。
+
 > **一定记得把`username`改成你的github用户名!**
 
 比如我的用户名是`vimplus`，同理仓库名就是`vimplus.github.io`。
