@@ -36,6 +36,7 @@ table td {
   vertical-align: top;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
+  word-wrap: break-word;
 }
 table tbody > tr:nth-child(2n+1) {
   background-color: rgba(102,128,153,.05);
@@ -382,6 +383,67 @@ ul.social li:last-child {
   transform: scale(1.5, 1.5);
 }
 
+/* Article ---------------------- */
+.article {
+    margin-bottom: 60px;
+    min-height: 250px;
+    word-wrap: break-word;
+}
+
+.article-header {
+    font-weight: normal;
+    padding: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    color: #2F2F2F;
+    border-bottom: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ededed;
+}
+
+.article-title {}
+
+.article-info {
+    line-height: 30px;
+    color: #888;
+}
+
+.article-info .date {
+    font-size: 14px;
+}
+
+.article-tags {
+    display: inline-block;
+}
+
+.article-tags a {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 1px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #888;
+    border: 1px solid #bfbfbf;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+
+.article-tags a:hover {
+    color: #36a9e5;
+    border-color: #36a9e5;
+}
+
+.article-img {
+  text-align: center;
+}
+
+.article-img .main-img {
+  width: 600px;
+  height: 300px;
+}
+
+
+
 /* Archived list  ---------------------- */
 
 .article-list-item {
@@ -478,6 +540,11 @@ ul.social li:last-child {
   display: block;
   width: 100%;
   margin-top: 10px;
+}
+
+.touch .article-img .main-img {
+  width: 100%;
+  height: 180px;
 }
 
 /*.touch .header-nav {
@@ -581,7 +648,7 @@ ul.social li:last-child {
 }
 
 
-/* Article ---------------------- */
+
 
 /*.info {
     border-bottom: 1px solid #e4e5e7;
@@ -611,62 +678,16 @@ ul.social li:last-child {
     text-transform: uppercase;
 }*/
 
-.article {
-    margin-bottom: 60px;
-    min-height: 250px;
-}
 
-.article-header {
-    font-weight: normal;
-    padding: 0;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    color: #2F2F2F;
-    border-bottom: 0;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ededed;
-}
 
-.article-title {}
-
-.article-info {
-    line-height: 30px;
-    color: #888;
-}
-
-.article-info .date {
-    font-size: 14px;
-}
-
-.article-tags {
-    display: inline-block;
-}
-
-.article-tags a {
-    display: inline-block;
-    padding: 0 10px;
-    margin: 0 1px;
-    font-size: 12px;
-    line-height: 24px;
-    color: #888;
-    border: 1px solid #bfbfbf;
-    border-radius: 12px;
-    transition: all .3s ease;
-}
-
-.article-tags a:hover {
-    color: #36a9e5;
-    border-color: #36a9e5;
-}
-
-article h2 {
+/*article h2 {
     padding: 0;
     margin: 0;
 }
 
 article h2 a {
     color: #2F2F2F;
-}
+}*/
 
 .featuredimage {
     margin: 15px 0;
