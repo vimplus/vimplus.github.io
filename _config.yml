@@ -7,6 +7,8 @@ signoff:          Ngoc Tran
 links:
   - name:         首页
     url:          /
+  - name:         文章
+    url:          /list.html
   - name:         分类
     url:          /categories.html
   - name:         标签
@@ -15,12 +17,12 @@ links:
     url:          /archives.html
   - name:         关于我
     url:          /sample-page
-    
+
 
 gems: [jekyll-paginate]
-    
+
 # pagination
-paginate: 1 # 指定每页多少条
+paginate: 10 # 指定每页多少条
 paginate_path: "page/:num" # 指定每页的url
 
 future: true
@@ -47,7 +49,7 @@ kramdown:
       line_numbers: false
       start_line: 1
       
-      
+
 version: 1.1.0
 
 

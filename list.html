@@ -1,26 +1,4 @@
 ---
 layout: index
 ---
-<div class="row archived-container">
-  <div class="twelve columns">
-    <div class="row border-top-normal">
-      {% for post in paginator.posts %}
-        <div class="row">
-          <div class="twelve columns">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="article-list-item">
-                  <span class="article-list-title">{{ post.title }}</span>
-                  <span class="post-meta date-label">
-                    {{ post.date | date: "%Y-%m-%d" }}
-                  </span>
-                </div>
-              </a>
-              <p>{{ post.excerpt }}</p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-{% include pagination.html %}
+{{content}}

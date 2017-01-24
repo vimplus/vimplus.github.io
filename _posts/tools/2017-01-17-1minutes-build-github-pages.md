@@ -1,5 +1,5 @@
 ---
-title: 3分钟学会搭建github-Pages
+title: 1分钟学会搭建github-Pages
 date: 2017-01-17
 description: "github搭建博客站点"
 layout: post

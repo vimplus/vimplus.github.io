@@ -36,7 +36,10 @@
                         </header>
                         <div class="row">
                             {% if page.image %}
-                            <img width="100%" style="height:auto;" src="{{page.image}}"> {% endif %}
+                            <p style="text-align:center">
+                              <img width="600px" style="height:300px;" src="{{page.image}}">
+                            </p>
+                            {% endif %}
                             <div class="maincontent">
                                 <div class="twelve columns">
                                     {{ content }}
