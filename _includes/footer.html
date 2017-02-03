@@ -2,13 +2,20 @@
 <footer class="site-footer theme-dark">
     <div class="content">
         <div class="footer-rights">
-            <p class="text-center">Copyright © 2014-2017 LXYTech Inc. All Rights Reserved</p>
+            <p class="text-center">Copyright © 2014-<span id="thisYear"></span> LXYTech Inc. All Rights Reserved</p>
         </div>
     </div>
 </footer>
 
 <script type='text/javascript' src='{{ site.url }}/js/foundation.min.js?v={{site.version}}'></script>
 <script type='text/javascript' src='{{ site.url }}/js/app.js?v={{site.version}}'></script>
+<script>
+  $(function () {
+    var date = new Date();
+    var thisYear = date.getFullYear();
+    $('#thisYear').text(thisYear);
+  })
+</script>
 <!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

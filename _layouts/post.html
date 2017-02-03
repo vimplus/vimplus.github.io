@@ -19,7 +19,7 @@
         <!-- Main Page Content and Sidebar -->
         <div class="main-part">
             <div class="content theme-tint">
-                <div class="content-container nine columns">
+                <div class="mode-container nine columns">
                     <!-- Post -->
                     <article class="article">
                         <header class="article-header">
@@ -28,22 +28,23 @@
                             </div>
                             <div class="article-info">
                                 <time class="date" datetime="{{ page.date | date: '%B %d, %Y'}}">{{ page.date | date: '%Y-%m-%d'}}</time>
-                                <div class="article-tags">
-                                    {% for tag in page.tag %}
-                                    <a id="{{ tag }}-ref" href="/tags.html#{{tag}}">{{ tag }}</a> {% endfor %}
-                                </div>
+                                <a class="category" href="/categories.html#{{page.categories}}">{{page.categories}}</a>
                             </div>
                         </header>
-                        <div class="row">
+                        <div class="main-content">
                             {% if page.image %}
                             <p class="article-img">
                               <img class="main-img" src="{{page.image}}">
                             </p>
                             {% endif %}
-                            <div class="maincontent">
-                                <div class="twelve columns">
-                                    {{ content }}
-                                </div>
+                            <div class="main-text">
+                                {{ content }}
+                            </div>
+                            <div class="columns-hd">相关标签</div>
+                            <div class="article-tags">
+                              {% for tag in page.tags %}
+                              <a class="tag" id="{{ tag }}-ref" href="/tags.html#{{tag}}">{{ tag }}</a>
+                              {% endfor %}
                             </div>
                         </div>
                         {% if page.comments %} {% include duoshuo.html %} {% endif %}

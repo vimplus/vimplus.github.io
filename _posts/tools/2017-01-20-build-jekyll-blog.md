@@ -5,7 +5,7 @@ image: http://static.zybuluo.com/Lxyour/oh492likcac61ksx1jwmbdd4/image_1b7291uah
 description: "基于jekyll轻松搭建Github-Pages博客"
 layout: post
 categories: jekyll
-tag: [jekyll,blog]
+tags: [jekyll,blog]
 comments: true
 ---
 ## 前言

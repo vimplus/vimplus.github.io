@@ -5,7 +5,7 @@ image: http://lxyweb.qiniudn.com/Lxyweb_ArticleThumbnail_20151125001.jpg
 description: "自定义sublime或Brackets中Emmet插件模板-Brackets使用心得"
 layout: post
 categories: Brackets
-tag: [Emmet,Brackets]
+tags: [Emmet,Brackets]
 comments: true
 ---
 Emmet在开发效率上给我们带来了很多方便，Emmet中默认的H5的文档是这样的：

@@ -4,7 +4,7 @@ date: 2017-01-24 17:13:21
 description: "前端开发命名规范参考笔记"
 layout: post
 categories: 前端开发
-tag: [FrontEnd,naming]
+tags: [FrontEnd,naming]
 comments: true
 ---
 很多刚接触前端的同学都觉得class或者函数的命名好纠结，确实，每个程序员都觉得命名好纠结。
@@ -207,6 +207,7 @@ CSS 声明顺序以类型（position, display, colors, font, miscellaneous…）
 * 打印 print.css
 
 ## JavaScript
+
 ### JavaScript 注释规范
 
 ```

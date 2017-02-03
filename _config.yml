@@ -16,7 +16,7 @@ links:
   - name:         归档
     url:          /archives.html
   - name:         关于我
-    url:          /sample-page
+    url:          /about
 
 
 gems: [jekyll-paginate]
@@ -48,9 +48,9 @@ kramdown:
     block:
       line_numbers: false
       start_line: 1
-      
 
-version: 1.1.0
+
+version: 1.2.0
 
 
 exclude:
