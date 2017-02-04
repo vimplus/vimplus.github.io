@@ -69,14 +69,9 @@ http://www.baidu.com/abc.jpg
 http://www.baidu.com/abc.png
 https://www.baidu.com/abc.jpg
 ```
-在输入框中输入：
-```
-http:\/\/(.+\.jpg)
-```
-
+在输入框中输入：`http:\/\/(.+\.jpg)`
 如图：
 ![image_1b81neubcnm4psgg301duvaq13.png-27kB][5]
-
 处理后：
 
 ```

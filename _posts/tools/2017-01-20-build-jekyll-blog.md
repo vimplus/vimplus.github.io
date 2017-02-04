@@ -98,4 +98,4 @@ $ jekyll server
 
   [1]: https://github.com/new
   [2]: http://jekyllthemes.org/
-  [3]: https://vimplus.github.io/github/2017/01/17/3minutes-build-github-pages.html
+  [3]: https://vimplus.github.io/github/2017/01/18/1minutes-build-github-pages.html

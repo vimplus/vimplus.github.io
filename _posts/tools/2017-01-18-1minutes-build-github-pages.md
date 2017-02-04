@@ -1,6 +1,6 @@
 ---
 title: 1分钟学会搭建github-Pages
-date: 2017-01-17
+date: 2017-01-18 15:12:23
 description: "github搭建博客站点"
 layout: post
 categories: github
