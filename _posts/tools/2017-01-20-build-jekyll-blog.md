@@ -93,7 +93,7 @@ $ jekyll server
 更多坑自行Google搜索吧。
 
 ## 拓展阅读
-[3分钟学会搭建github-Pages][3]
+[1分钟学会搭建github-Pages][3]
 
 
   [1]: https://github.com/new
