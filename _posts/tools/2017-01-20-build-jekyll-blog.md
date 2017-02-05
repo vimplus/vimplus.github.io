@@ -1,7 +1,7 @@
 ---
 title: 基于jekyll轻松搭建Github-Pages博客
 date: 2017-01-20 15:12:21
-image: http://static.zybuluo.com/Lxyour/oh492likcac61ksx1jwmbdd4/image_1b7291uah169vej2325ctm1vsj9.png
+image: /images/article/github-pages-jekyll-img.png
 description: "基于jekyll轻松搭建Github-Pages博客"
 layout: post
 categories: jekyll

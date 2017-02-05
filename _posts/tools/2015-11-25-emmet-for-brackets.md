@@ -1,7 +1,7 @@
 ---
 title: 自定义sublime或Brackets中Emmet插件模板-Brackets使用心得
 date: 2015-11-25 10:55:21
-image: http://lxyweb.qiniudn.com/Lxyweb_ArticleThumbnail_20151125001.jpg
+image: /images/article/thinktxt_emmet_20151125.jpg
 description: "自定义sublime或Brackets中Emmet插件模板-Brackets使用心得"
 layout: post
 categories: Brackets
