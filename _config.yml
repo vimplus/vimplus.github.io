@@ -1,7 +1,8 @@
 title:            乐潇游
 description:      快乐，潇洒，自游儿~
 author:           乐潇游
-url:              https://vimplus.github.io
+url:              https://www.thinktxt.com  # with the https protocol
+enforce_ssl:      www.thinktxt.com          # without any protocol
 signoff:          Ngoc Tran
 
 links:
@@ -18,9 +19,6 @@ links:
   - name:         关于我
     url:          /about
 
-
-url: https://www.thinktxt.com   # with the https protocol
-enforce_ssl: www.thinktxt.com   # without any protocol
 
 gems: [jekyll-paginate]
 
