@@ -12,6 +12,11 @@
 <link rel="stylesheet" id='aude-layout-css'  href="{{ site.url }}/css/master.css?ver={{site.version}}" media="all" />
 <link rel="stylesheet" id='foundation-css'  href="{{ site.url }}/css/syntax.css?ver={{site.version}}" media="all" />
 <script type='text/javascript' src='{{ site.url }}/js/jquery.js'></script>
+<script type="text/javascript">
+    var host = "thinktxt.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
 <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript' src='{{ site.url }}/js/modernizr.foundation.js?ver={{site.version}}"></script>
 <script type="text/x-mathjax-config">
