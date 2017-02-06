@@ -833,7 +833,8 @@ div.aligncenter {
 }
 
 code {
-    line-height: 20px;
+  font-family: inherit;
+  line-height: 20px;
 }
 
 code.highlighter-rouge {
