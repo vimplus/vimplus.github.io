@@ -60,7 +60,7 @@ dig yourdomain.com +nostats +nocomments +nocmd
 到这里我们就完成了自定义域名的绑定，为你的博客继续增添装逼的能量吧。
 
 ## 最后
-需要注意的是，如果开启了自定义域名支持，GitHub 提供的子域名 `username.github.io` 的 HTTPS 就无法生效了，仍然想要支持https的话可以参考：[为自定义域名的GitHub Pages添加SSL 完整方案][4]。
+需要注意的是，如果开启了自定义域名支持，GitHub 提供的子域名 `username.github.io` 的 HTTPS 就无法生效了，仍然想要支持https的话可以参考：[为GitHub Pages自定义域名配置HTTPS][4]。
 
 ## 拓展阅读
 [Custom domain for GitHub project pages][5]
@@ -70,5 +70,5 @@ dig yourdomain.com +nostats +nocomments +nocmd
   [1]: http://static.zybuluo.com/Lxyour/x2fvzlwjfek93mzf8vkyf5hn/image_1b89e26ml61r1dqs1u1h10vd1ggt1g.png
   [2]: http://static.zybuluo.com/Lxyour/o3dtkigq4axg7bascjbbecoy/image_1b89e5sp01c2t167mbhp174i11f01t.png
   [3]: http://static.zybuluo.com/Lxyour/o8g4u05dos2zrirdr2khdiyn/image_1b89av1da1e3n1s1mt301ie3qhsm.png
-  [4]: https://yicodes.com/2016/12/04/free-cloudflare-ssl-for-custom-domain/
+  [4]: https://www.thinktxt.com/jekyll/2017/02/05/jekyll-series-github-pages-bind-domain.html
   [5]: http://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
