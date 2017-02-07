@@ -4,7 +4,7 @@ date: 2017-02-05 18:55:23
 description: "玩转jekyll系列（三）- 之为GitHub Pages自定义域名配置HTTPS"
 layout: post
 categories: jekyll
-tags: [jekyll,GitHub-Pages,https]
+tags: [jekyll,GitHub-Pages,HTTPS]
 comments: true
 ---
 HTTPS 是 HTTP Secure，是一种更安全的 HTTP 协议，目前建议是所有的网络请求都能是 HTTPS 的，像Google，Facebook， Baidu，Taobao等公司，都已经全站启用 HTTPS ，可以在浏览器的地址栏看到一个绿色的锁的标志，而且 Google 会优先选择 HTTPS 网页而不是等效的 HTTP 网页作为规范网址，优先收录。
@@ -37,7 +37,7 @@ HTTPS并非是一种新协议，而是对工作在——加密连接（TLS或SSL
 
 
 ## 开始
-省略前面2步，我们从第三步开始：
+前面的2步自行完成，我们从第三步开始：
 
 ### 添加域名，设置解析记录
 
