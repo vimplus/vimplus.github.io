@@ -11,7 +11,7 @@ comments: true
 ## 前言
 有时候看到一些大牛的博客简洁，版式美观，一看就是markdown的风格，所以一直很想自己弄一个版式简洁，支持markdown的独立博客。
 
-刚接触前端的时候只知道有那些WordPress这种博客系统，自己也曾经搭建过，但是觉得太复杂，要自己买服务器、备案之类的，重点是自己写的本地markdown笔记文件还不能直接任意搬迁上去，恕我井底蛙，隔了好久后来终于发现原来有一种叫做 **jekyll** 的博客系统（还有一种叫hexo，喜欢hexo的朋友也可以玩一下），于是如同发现新大陆，立马实践一把。
+刚接触前端的时候只知道有那些WordPress这种博客系统，自己也曾经搭建过，但是觉得太复杂，要自己买服务器、备案之类的，重点是自己写的本地markdown笔记文件还不能直接任意搬迁上去，恕我井底蛙，隔了好久后来终于发现原来有一种叫做 **jekyll** 的博客系统（还有[hexo][1]、[Octopres][2]、[Ruhoh][3]，喜欢hexo的朋友也可以玩一下），于是如同发现新大陆，立马实践一把。
 
 ## 特点
 * 无需数据库
@@ -70,7 +70,7 @@ $ jekyll server
 这样一个基本的jekyll站点就建立好了。
 
 ## 创建Github-Pages
-> 首先创建一个git仓库：[Create a new repository][1]
+> 首先创建一个git仓库：[Create a new repository][4]
 
 仓库名为：`username.github.io`，`username` : 为你的github用户名。
 
@@ -86,16 +86,19 @@ $ jekyll server
 到这里你的Github-Pages博客站点就大功告成啦！
 
 ## 博客主题
-作为强迫症的我怎能容忍丑陋的博客页面，当然是找[jekyll主题][2]或者自己设计，找到喜欢的主题后下载主题代码自行替换你站点目录的代码（你可以全部替换，因为一个主题就是有基本功能的jekyll站点）。
+作为强迫症的我怎能容忍丑陋的博客页面，当然是找[jekyll主题][5]或者自己设计，找到喜欢的主题后下载主题代码自行替换你站点目录的代码（你可以全部替换，因为一个主题就是有基本功能的jekyll站点）。
 
 ## 最后
 如果你根据我这篇并不那么详细的教程搭建出属于你自己的博客，那么恭喜你，欢迎入坑！
 更多坑自行Google搜索吧。
 
 ## 拓展阅读
-[1分钟学会搭建github-Pages][3]
+[1分钟学会搭建github-Pages][6]
 
 
-  [1]: https://github.com/new
-  [2]: http://jekyllthemes.org/
-  [3]: https://vimplus.github.io/github/2017/01/18/1minutes-build-github-pages.html
+  [1]: http://hexo.io/
+  [2]: http://octopress.org/
+  [3]: http://ruhoh.com/
+  [4]: https://github.com/new
+  [5]: http://jekyllthemes.org/
+  [6]: https://vimplus.github.io/github/2017/01/18/1minutes-build-github-pages.html

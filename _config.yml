@@ -30,6 +30,11 @@ excerpt_separator: "\n\n" # you can specify your own separator here, default is 
 permalink:        date
 
 
+lean_cloud :
+  app_id   :  OHfvrRyQ0YYxyATE5e7x23dE-gzGzoHsz
+  app_key  :  1lxnbiT3kGgVVgGwifpk9USX
+
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   input:          GFM
