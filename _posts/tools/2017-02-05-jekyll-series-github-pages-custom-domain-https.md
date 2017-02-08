@@ -118,15 +118,15 @@ ds.src = 'https://dn-hb0716.qbox.me/duoshuo.js';
   [3]: https://www.cloudflare.com/
   [4]: https://www.cloudflare.com/a/sign-up
   [5]: https://www.cloudflare.com/a/add-site
-  [6]: http://static.zybuluo.com/Lxyour/if9025vupkj8ibac9nn8s4cq/image_1b8bkej1j1rva160r1vsqo3i1oqd9.png
-  [7]: http://static.zybuluo.com/Lxyour/8jbgo1xo2wfi8fv4cxyzp8nu/image_1b8bkn127vqd1m4pk9h1154cpsm.png
-  [8]: http://static.zybuluo.com/Lxyour/3qvzn3lnw55e3qhisd2l2yah/image_1b8bl3r171n3o1n4o1n3413gljgm13.png
-  [9]: http://static.zybuluo.com/Lxyour/gcsnqxfd8klslqvzr9r49bs4/image_1b8blf9521li1jgl11fotgb1nsk1t.png
-  [10]: http://static.zybuluo.com/Lxyour/zz8b85uurco7hui6l1ce8vth/image_1b8blcf4d1uuul5j171l1d0i1f921g.png
-  [11]: http://static.zybuluo.com/Lxyour/qkcfoukxdjjqvygsimu96jri/image_1b8blt4kdfhc1v0c1r5f67n119v2a.png
-  [12]: http://static.zybuluo.com/Lxyour/hvyttr75pnrir6w2kp607kbd/image_1b8bm0p9t38b1mtn1f551bu61nnp2n.png
-  [13]: http://static.zybuluo.com/Lxyour/vus85arwn564l8tsj5taosiy/image_1b8bmomjc187q17pm17vb966os134.png
-  [14]: http://static.zybuluo.com/Lxyour/27fl7hdougfqf9srgplm5tin/image_1b8bms37rnviqr71c8l1skhlri3h.png
+  [6]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020501.jpg
+  [7]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020502.jpg
+  [8]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020503.jpg
+  [9]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020504.jpg
+  [10]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020505.jpg
+  [11]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020506.jpg
+  [12]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020507.jpg
+  [13]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020508.jpg
+  [14]: https://thinktxt.static.lxyour.com/article/github_custom_domain_https_2017020509.jpg
   [15]: https://github.com/rainwsy/duoshuo-https
   [16]: https://www.tiexo.cn/duoshuo-https/
   [17]: https://quericy.me/blog/788/
