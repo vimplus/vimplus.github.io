@@ -33,7 +33,7 @@ paginate_path: "page:num"   #分页页面路径格式
 在首页（index.html）中使用一下代码（自行修改样式吧）：
 注意：使用时请去掉代码中的`\`
 
-```
+```html
 <ul class="list-container">
   {\% for post in paginator.posts \%}
   <li class="list-item clearfix">
@@ -52,7 +52,7 @@ paginate_path: "page:num"   #分页页面路径格式
 ### 新建分页文件
 在`_includes`目录中新建`pagination.html`文件，添加一下代码：
 
-```
+```html
 {\% if paginator.total_pages > 1 \%}
   <div class="pagination">
     {\% if paginator.previous_page \%}
@@ -85,7 +85,7 @@ paginate_path: "page:num"   #分页页面路径格式
 ```
 然后引入在首页中或列表页引入分页代码：
 
-```
+```html
 {\% include pagination.html \%}
 ```
 
