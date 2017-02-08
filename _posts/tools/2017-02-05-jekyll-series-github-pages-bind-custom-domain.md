@@ -70,5 +70,5 @@ dig yourdomain.com +nostats +nocomments +nocmd
   [1]: https://thinktxt.static.lxyour.com/article/github_item_setting_20170205.jpg
   [2]: https://thinktxt.static.lxyour.com/article/github_custom_domain_20170205.jpg
   [3]: https://thinktxt.static.lxyour.com/article/domain_dns_20170205.jpg
-  [4]: https://www.thinktxt.com/jekyll/2017/02/05/jekyll-series-github-pages-custom-domain-https.html
+  [4]: https://www.thinktxt.com/jekyll/2017/02/06/jekyll-series-github-pages-custom-domain-htt.html
   [5]: http://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
