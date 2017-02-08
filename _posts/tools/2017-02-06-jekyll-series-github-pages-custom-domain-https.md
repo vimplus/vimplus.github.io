@@ -1,6 +1,6 @@
 ---
 title: 玩转jekyll系列（三）- 之为GitHub Pages自定义域名配置HTTPS
-date: 2017-02-05 18:55:23
+date: 2017-02-06 18:55:23
 description: "玩转jekyll系列（三）- 之为GitHub Pages自定义域名配置HTTPS"
 layout: post
 categories: jekyll
