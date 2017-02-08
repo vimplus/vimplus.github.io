@@ -3,7 +3,7 @@ title: 解决iOS Safari中按钮默认属性样式问题
 date: 2015-07-02 18:14:21
 description: "解决ios safari中按钮默认属性样式问题"
 layout: post
-categories: WEB前端
+categories: WEB-Front
 tags: [button,safari]
 comments: true
 ---

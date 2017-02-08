@@ -3,7 +3,7 @@ title: 前端开发命名规范参考笔记
 date: 2017-01-24 17:13:21
 description: "前端开发命名规范参考笔记"
 layout: post
-categories: WEB前端
+categories: WEB-Front
 tags: [FrontEnd,naming]
 comments: true
 ---
