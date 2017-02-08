@@ -171,7 +171,7 @@ iframe {
     position: absolute;
     left: 50%;
     margin-left: -200px;
-    background-image: url("../images/loading.svg");
+    background-image: url("https://thinktxt.static.lxyour.com/images/loading.svg");
     background-repeat: no-repeat;
     background-position: center;
 }

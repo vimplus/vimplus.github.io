@@ -36,4 +36,4 @@ comments: true
 使用CSS属性`-webkit-appearance: none; `轻松解决iPhone手机中safari上的默认样式问题。
 
 
-  [1]: http://static.zybuluo.com/Lxyour/ychtaf4svrlsp7obtc0ylotk/image_1b84k8j8m1u6huibklef391gete3.png
+  [1]: https://thinktxt.static.lxyour.com/images/article/ios_button_hack_20170208.png
