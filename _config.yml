@@ -3,6 +3,7 @@ description:      与你一起思考纯朴的知识！
 author:           乐潇游
 url:              https://www.thinktxt.com    # with the https protocol
 enforce_ssl:      www.thinktxt.com            # without any protocol
+cdn:              https://thinktxt.static.lxyour.com
 
 links:
   - name:         首页

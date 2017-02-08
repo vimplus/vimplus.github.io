@@ -95,7 +95,10 @@ HTTPS并非是一种新协议，而是对工作在——加密连接（TLS或SSL
 ```
 
 ### 多说评论
-有些小伙伴的博客可能采用了多说评论，虽然多说评论自身能够支持https，但是头像就不是那么完美了，我采用的方案是这里提供的一个[git项目][15]。详细可以参考：[多说评论支持HTTPS头像&表情][16]
+有些小伙伴的博客可能采用了多说评论，虽然多说评论自身能够支持https，但是头像就不是那么完美了，我采用的方案是这里提供的一个[git项目][15]。详细可以参考：
+[多说评论支持HTTPS头像&表情][16]
+[巧用七牛https域名,无需反代让多说支持SSL和CDN加速][17]
+
 **解决方案：**
 修改你引入的多说代码，将这一行：
 
@@ -126,3 +129,4 @@ ds.src = 'https://dn-hb0716.qbox.me/duoshuo.js';
   [14]: http://static.zybuluo.com/Lxyour/27fl7hdougfqf9srgplm5tin/image_1b8bms37rnviqr71c8l1skhlri3h.png
   [15]: https://github.com/rainwsy/duoshuo-https
   [16]: https://www.tiexo.cn/duoshuo-https/
+  [17]: https://quericy.me/blog/788/
