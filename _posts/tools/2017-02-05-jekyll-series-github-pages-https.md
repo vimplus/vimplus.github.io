@@ -67,8 +67,8 @@ dig yourdomain.com +nostats +nocomments +nocmd
 
 
 
-  [1]: http://static.zybuluo.com/Lxyour/x2fvzlwjfek93mzf8vkyf5hn/image_1b89e26ml61r1dqs1u1h10vd1ggt1g.png
-  [2]: http://static.zybuluo.com/Lxyour/o3dtkigq4axg7bascjbbecoy/image_1b89e5sp01c2t167mbhp174i11f01t.png
-  [3]: http://static.zybuluo.com/Lxyour/o8g4u05dos2zrirdr2khdiyn/image_1b89av1da1e3n1s1mt301ie3qhsm.png
+  [1]: https://thinktxt.static.lxyour.com/article/github_item_setting_20170205.jpg
+  [2]: https://thinktxt.static.lxyour.com/article/github_custom_domain_20170205.jpg
+  [3]: https://thinktxt.static.lxyour.com/article/domain_dns_20170205.jpg
   [4]: https://www.thinktxt.com/jekyll/2017/02/05/jekyll-series-github-pages-bind-domain.html
   [5]: http://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages

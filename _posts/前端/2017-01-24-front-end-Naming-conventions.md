@@ -235,5 +235,5 @@ CSS 声明顺序以类型（position, display, colors, font, miscellaneous…）
 ```
 
 
-  [1]: http://static.zybuluo.com/Lxyour/kd996o7mcs4i7jcoau0jn23d/image_1b4fms4ddun71oh1k8t46l1coe9.png
-  [2]: http://static.zybuluo.com/Lxyour/2o0r4yql9fa93l01bp6a2cfi/image_1b4fn04ng13v51a6bc6g1ugi6em.png
+  [1]: https://thinktxt.static.lxyour.com/article/web_frame_20170124.jpg
+  [2]: https://thinktxt.static.lxyour.com/article/web_mode_20170124.jpg
