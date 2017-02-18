@@ -12,7 +12,7 @@ comments: true
 ## 什么是Flex？
 Flex是Flexible Box的简称，意为"弹性盒子"，用来为盒状模型提供布局上最大的灵活性。
 
-注意：Flex布局比较适合Web应用程序的一些小组件和小规模的布局，而栅格布局更适合用于一些大规模的布局。
+注意：Flex布局比较适合Web应用程序的一些小组件和小规模的布局，而Grid布局更适合用于一些大规模的布局。
 
 ## 简单使用
 任何一个盒子模型都可以设定为Flex布局方式，为要使用弹性布局的元素CSS样式设置`display`属性，例如：
@@ -47,7 +47,10 @@ Flex布局方式由 **Flex容器** 和 **Flex项目** 构成：
 * Flex容器 - 我们简称为“容器”，类似于`父元素`
 * Flex项目 - 我们简称为“项目”，类似于`子元素`
 
-**注意**：当采用Flex布局时，也就是包含项目的父元素`display`属性设为`flex`后，子元素的`float`、`clear`和`vertical-align`属性将失效。
+**注意**：当采用Flex布局时，也就是包含项目的父元素`display`属性设为`flex`后：
+
+* CSS的`columns`属性Flex容器上无效；
+* Flex项目的`float`、`clear`和`vertical-align`属性将失效。
 
 Flex盒子结构示意图：
 
