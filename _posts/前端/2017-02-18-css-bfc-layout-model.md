@@ -93,7 +93,7 @@ W3C规范定义：
 
 ```html
 <style>
-  .container {
+  .wrap {
     width:330px;
     background: #08c;
     overflow: hidden;

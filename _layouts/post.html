@@ -56,6 +56,9 @@
                               <a class="tag" id="{{ tag }}-ref" href="/tags.html#{{tag}}">{{ tag }}</a>
                               {% endfor %}
                             </div>
+                            {% if page.pay %}
+                            <div class="qrCode-pay"><img src="https://thinktxt.static.lxyour.com/images/blog-qrcode-pay.jpg" alt="qrcode-pay"></div>
+                            {% endif %}
                         </div>
                         {% if page.comments %} {% include duoshuo.html %} {% endif %}
                     </article>
