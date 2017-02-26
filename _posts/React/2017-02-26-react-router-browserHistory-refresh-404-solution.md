@@ -183,3 +183,9 @@ server {
 面对这种场景其实还有很多种方案，任何服务端的处理方式都可以，例如还有PHP、Apache等等。
 
 > 其本质的原理就是利用服务端将任何请求都指向`index.html`，而在React应用中index.html又刚好通过React-Router配置了相应的路由，我们让服务器返回index.html，后面就交给前端路由来实现无刷新加载对应页面。
+
+## 参考文章
+
+* [React Router 中文文档-Histories](https://react-guide.github.io/react-router-cn/docs/guides/basics/Histories.html)
+* [react-router 浏览器刷新，页面404，依靠nginx配置解决](http://nphard.me/2016/03/07/nginx-for-react/)
+* [小白学react之React Router实战](http://www.jianshu.com/p/d8d1e5d50447)
