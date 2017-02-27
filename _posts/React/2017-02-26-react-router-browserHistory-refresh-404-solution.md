@@ -77,7 +77,7 @@ server {
 	server_name react.thinktxt.com;
 	listen 80;
 
-	root /Users/txBoy/WEB-Project/ReactBuild/dist;
+	root /Users/txBoy/WEB-Project/React-Demo/dist;
 	index index.html;
 	location / {
     	try_files $uri /index.html;
