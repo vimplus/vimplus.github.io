@@ -1,6 +1,6 @@
 ---
 title: JS课堂第六节 - JavaScript 内置对象
-date: 2016-03-28 21:12:36
+date: 2016-04-05 21:12:36
 description: "JS课堂第六节 - JavaScript 内置对象"
 layout: post
 categories: JavaScript

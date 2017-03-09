@@ -18,7 +18,7 @@
 .c { color: #999; } /* Comment */
 .err { color: #a00; background-color: #faa } /* Error */
 .k { color: #069; } /* Keyword */
-.o { color: #555 } /* Operator */
+.o { color: #dd9 } /* Operator */
 .cm { color: #09f; font-style: italic } /* Comment.Multiline */
 .cp { color: #099 } /* Comment.Preproc */
 .c1 { color: #999; } /* Comment.Single */
@@ -42,7 +42,7 @@
 .m { color: #2ba6cb } /* Literal.Number */
 .s { color: #d44950 } /* Literal.String */
 .na { color: #4f9fcf } /* Name.Attribute */
-.nb { color: #366 } /* Name.Builtin */
+.nb { color: #396 } /* Name.Builtin */
 .nc { color: #0a8; } /* Name.Class */
 .no { color: #360 } /* Name.Constant */
 .nd { color: #99f } /* Name.Decorator */
