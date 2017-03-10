@@ -24,7 +24,7 @@ pay: true
 首先找到Nginx配置文件：
 
 * Windows下路径就是你安装Nginx目录下找，比如我的放在C盘根目录，那就是：`c:\nginx\conf\nginx.conf`
-* Mac系统配置文件路径在: `/usr/local/etc/nginx/nginx.conf`, Find下通过`Command+G`，输入`/usr/local/etc/nginx/`进入该目录。
+* Mac系统配置文件路径在: `/usr/local/etc/nginx/nginx.conf`, Finder下通过`Shift+Command+G`，输入`/usr/local/etc/nginx/`进入该目录。
 
 在Nginx配置文件中添加如下配置：
 
