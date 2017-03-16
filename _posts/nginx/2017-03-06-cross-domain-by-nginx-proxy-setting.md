@@ -1,5 +1,5 @@
 ---
-title: 通过 Ngin 代理转发配置实现跨域（API代理转发）
+title: 通过 Nginx 代理转发配置实现跨域（API代理转发）
 date: 2017-03-06 12:45:21
 description: "通过 Ngin 代理转发配置实现跨域（API代理转发）"
 layout: post
