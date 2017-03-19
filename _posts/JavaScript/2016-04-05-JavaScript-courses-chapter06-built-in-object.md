@@ -264,7 +264,7 @@ myArray[2] = 6;
 | `push()` | 添加一个或多个元素到数组的 **末尾** (往数组后面追加新元素) | 返回原数组的长度 | **改变原数组** | arr.push(item) |
 | `unshift()` | 在数组的 **开头** 添加一个或者多个元素 | 返回原数组的长度 | **改变原数组** | arr.unshift(item) |
 | `shift()` | 删除数组的 **第一个** 元素 | 返回被删除的这个元素 | **改变原数组** | arr.slice(0) |
-| `pop()` | **删除一个数组中的 **最后一个** 元素 | 返回被删除的这个元素 | **改变原数组** | arr.slice(0) |
+| `pop()` | 删除一个数组中的 **最后一个** 元素 | 返回被删除的这个元素 | **改变原数组** | arr.slice(0) |
 | `join()` | 数组转字符串 | 返回组成的字符串 | **返回字符串** | arr.join('-') |
 | `reverse()` | 颠倒数组的顺序 | 返回颠倒后的数组 | **改变原数组** | arr.reverse() |
 | `sort()` | 数组的排序 | 返回排序后的数组 | 默认按Unicode编码排序 | arr.sort() |
@@ -315,7 +315,7 @@ console.log(myarr.join("."));
 使用语法：`arrayObject.slice(start, end)`
 参数说明：star 必填，规定从何处开始选取。如果是负数，就从数组尾部开始算起始位置，比如 -1 指最后一个元素，-2 指倒数第二个元素。
  end 可选，规定从何处结束选取。该参数是子数组结束处的父数组下标。如果不指定，则一直选取到 arrayObject 末尾。如果为负数，则从数组尾部开始算结束位置，同 start。
- 
+
 需要注意的是：
 
 * 1.可使用负值从数组的尾部选取元素。
@@ -431,7 +431,7 @@ console.log("时间是" + myhours + "点"+ myminutes + "分" + myseconds + "秒"
 ```javascript
 var now = new Date();
 var weekday=["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-var mynum = now.getDay(); 
+var mynum = now.getDay();
 console.log(mynum);
 console.log(weekday[mynum]);
 ```
@@ -476,5 +476,3 @@ console.log(Math.max(0.8, 6.6, 5, 4.5, -5.1, -5.9));
 
   [1]: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String
   [2]: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-
