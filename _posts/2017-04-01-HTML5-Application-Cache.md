@@ -3,7 +3,7 @@ title: HTML5 Application Cache离线缓存应用实践
 date: 2017-04-01 18:45:21
 description: "HTML5 Application Cache离线缓存应用实践"
 layout: post
-categories: WEB优化
+categories: WEB-Optimize
 tags: [缓存,Application Cache,离线存储]
 comments: true
 pay: true
