@@ -4,7 +4,7 @@ date: 2017-04-01 18:45:21
 description: "HTML5 Application Cache离线缓存应用实践"
 layout: post
 categories: WEB-Cache
-tags: [缓存,Application Cache,离线存储]
+tags: [Cache,Application Cache,离线存储]
 comments: true
 pay: true
 ---
