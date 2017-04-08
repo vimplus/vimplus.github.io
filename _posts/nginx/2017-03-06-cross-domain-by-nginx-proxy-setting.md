@@ -32,11 +32,11 @@ pay: true
 server {
     listen  80;
     server_name 127.0.0.1;
-    
+
     location / {
         proxy_pass  http://127.0.0.1:3000;
     }
-    
+
     location ~ /api/ {
         proxy_pass  http://172.30.1.123:8081;
     }
@@ -50,7 +50,7 @@ server {
 
 ## 完成
 
-经过上面的配置我们可以直接通过`http://127.0.0.1`访问我们的WEB应用（如果觉得IP访问），而相关的API请求也会根据我们的Nginx配置进行相应的请求，浏览器端看到的`/api/getList`请求的是127.0.0.1端口为80的端口，但是实际上这个请求已经被我们的Nginx转发指向`http://172.30.1.123:8081/api/getList`
+经过上面的配置我们可以直接通过`http://127.0.0.1`访问我们的WEB应用（如果采用IP访问），而相关的API请求也会根据我们的Nginx配置进行相应的请求，浏览器端看到的`/api/getList`请求的是127.0.0.1端口为80的端口，但是实际上这个请求已经被我们的Nginx转发指向`http://172.30.1.123:8081/api/getList`
 
 **友情提示：**
 
@@ -61,6 +61,13 @@ server {
 ### 绑定host
 
 如果你觉得输入IP访问不爽那你可以自己修改host，推荐host修改神器：[SwitchHosts][2]。
+
+*host修改参考：*
+
+```
+127.0.0.1 www.domain.com  #改成你需要的任何域名
+```
+
 如果绑定了host，在Nginx配置中当然也可以直接配置你指定的域名，譬如：
 
 ```nginx
@@ -114,4 +121,3 @@ localtion ~ /api/abc {
   [1]: https://ww3.sinaimg.cn/large/006tNc79gy1fden48rih7j30j6084myh.jpg
   [2]: https://github.com/oldj/SwitchHosts
   [3]: https://segmentfault.com/a/1190000002797606
-

@@ -90,13 +90,13 @@ types {
 
 #### Apache
 
-> 在 Apache 服务器上，若要设置适用于清单(.appcache)文件的 MIME 类型，可以向根目录或应用的同级目录下的一个 .htaccess 文件中增加 `AddType text/cache-manifest .appcache` 。 
+> 在 Apache 服务器上，若要设置适用于清单(.appcache)文件的 MIME 类型，可以向根目录或应用的同级目录下的一个 .htaccess 文件中增加 `AddType text/cache-manifest .appcache` 。
 
 ## 更新缓存资源
 
 浏览器离线存储缓存机制示意图：
 
-![img](https://i2.muimg.com/1949/cf316f4451d5b89a.jpg)
+![img](https://ww1.sinaimg.cn/large/006tNbRwgy1fefm6heseij30i205ljrp.jpg)
 
 * 用户初次访问网站，浏览器读取到`<html>`标签中`manifest`属性声明的`manifest.appcache`文件，根据`manifest`文件的内容下载相应的资源并进行离线存储。
 
@@ -104,7 +104,7 @@ types {
 
   如图：
 
-  ![Markdown](https://i2.muimg.com/1949/cb013e174328c7b9.png)
+  ![Markdown](https://ww3.sinaimg.cn/large/006tNbRwgy1fefm6gssb3j30jv0b4gnt.jpg)
 
 * 资源已经离线存储后，用户再次访问时，浏览器就会使用离线的资源加载页面，然后浏览器会对比新的`manifest`文件与旧的`manifest`文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。
 
