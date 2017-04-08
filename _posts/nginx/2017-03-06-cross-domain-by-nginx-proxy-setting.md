@@ -61,8 +61,7 @@ server {
 ### 绑定host
 
 如果你觉得输入IP访问不爽那你可以自己修改host，推荐host修改神器：[SwitchHosts][2]。
-
-*host修改参考：*
+**host修改参考：**
 
 ```
 127.0.0.1 www.domain.com  #改成你需要的任何域名
