@@ -165,7 +165,7 @@ var appCache = window.applicationCache;
 | 4    | `appCache.UPDATEREADY` | 已更新  |
 | 5    | `appCache.OBSOLETE`    | 失效   |
 
- #### 方法
+#### 方法
 
 | 方法名         | 描述           |
 | ----------- | ------------ |
