@@ -117,6 +117,6 @@ localtion ~ /api/abc {
 更多详细localtion的正则匹配规则可参考：[nginx配置location总结及rewrite规则写法][3]
 
 
-  [1]: https://ww3.sinaimg.cn/large/006tNc79gy1fden48rih7j30j6084myh.jpg
-  [2]: https://github.com/oldj/SwitchHosts
-  [3]: https://segmentfault.com/a/1190000002797606
+[1]: https://user-gold-cdn.xitu.io/2017/4/8/7911dee9411ea7fbb659fa38cc5e57ac.jpg
+[2]: https://github.com/oldj/SwitchHosts
+[3]: https://segmentfault.com/a/1190000002797606
