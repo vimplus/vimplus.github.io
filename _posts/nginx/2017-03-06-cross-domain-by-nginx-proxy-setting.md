@@ -52,6 +52,37 @@ server {
 
 经过上面的配置我们可以直接通过`http://127.0.0.1`访问我们的WEB应用（如果采用IP访问），而相关的API请求也会根据我们的Nginx配置进行相应的请求，浏览器端看到的`/api/getList`请求的是127.0.0.1端口为80的端口，但是实际上这个请求已经被我们的Nginx转发指向`http://172.30.1.123:8081/api/getList`
 
+**优化：**
+
+> 基本的代理功能就像上面如此简单的配置即可。
+>
+> 但是，当我们需要获取真实IP的业务时，还需要添加关于真实IP的配置，如下：
+
+```nginx
+server {
+    listen  80;
+    server_name 127.0.0.1;
+
+    location / {
+        proxy_pass  http://127.0.0.1:3000;
+    	proxy_set_header Host $host:80;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location ~ /api/ {
+        proxy_pass  http://172.30.1.123:8081;
+    	proxy_set_header Host $host:80;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+```
+
+`proxy_set_header`这个配置是改变`HTTP`的**请求头**，而`Host`是请求的主机名，`X-Real-IP`是请求的真实IP，`X-Forwarded-For`表示请求是由谁发起的。
+
+>  因为我们的Nginx在这里属于代理服务器，通过`proxy_set_header`配置这些信息目的是让服务端获取到真实的请求头。
+
 **友情提示：**
 
 > Nginx每一条配置语句后面都必须要加分好`;`  否则会报配置错误，自己还一脸懵逼。
@@ -115,6 +146,10 @@ localtion ~ /api/abc {
 * `~*` 开头表示不区分大小写的正则匹配
 
 更多详细localtion的正则匹配规则可参考：[nginx配置location总结及rewrite规则写法][3]
+
+## 后记
+
+笔者也是Nginx的初级使用者，希望通过通俗易懂的方式记录这些知识，分享给有需要的人，一起钻研学习，如有纰漏，欢迎指正，谢谢！
 
 
 [1]: https://ww3.sinaimg.cn/large/006tNc79gy1fden48rih7j30j6084myh.jpg
