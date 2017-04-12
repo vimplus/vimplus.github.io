@@ -104,6 +104,12 @@ a {
 .clearfix:after {content:""; display: table; clear: both;}
 .clearfix {*zoom:1;}
 
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 
 a:hover {
     color: #233142;
