@@ -15,7 +15,7 @@ pay: true
 
 后端框架因为使用的是koa，采用`koa-static`实现如下:
 
-```
+```javascript
 import staticServer from 'koa-static';
 
 app.use(staticServer(__dirname, '/upload'));
@@ -27,7 +27,7 @@ app.use(staticServer(__dirname, '/upload'));
 
 Nginx天生擅长托管静态资源，最终选用的方案是通过Nginx托管，这样还可以解放Node的服务压力，配置如下：
 
-```
+```nginx
 server {
     listen          80;
     server_name     cms.thinktxt.com;
@@ -47,7 +47,7 @@ server {
 
 如果别的别的系统想要访问该站点目录下的资源，也可以做转发：
 
-```
+```nginx
 server {
     listen          80;
     server_name     static.thinktxt.com;
