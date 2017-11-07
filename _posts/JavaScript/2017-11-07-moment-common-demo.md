@@ -87,8 +87,8 @@ console.log('------timestrapB:', timestrapB);   // timestrapB: 1511539200000
 相关的单位有: `years、month、days、hours、minutes、seconds`
 
 ```javascript
-var offset1 = moment().add(-1, 'days').format('YYYY-MM-DD');
-var offset1A = moment().subtract(1, 'days').format('YYYY-MM-DD');
+var offset1 = moment().subtract(1, 'days').format('YYYY-MM-DD');
+var offset1A = moment().add(-1, 'days').format('YYYY-MM-DD');
 console.log('------往前推一天:', offset1);    // 往前推一天: 2017-11-05
 console.log('------往前推一天:', offset1A);   // 往前推一天: 2017-11-05
 ```
@@ -96,8 +96,8 @@ console.log('------往前推一天:', offset1A);   // 往前推一天: 2017-11-0
 ### 指定日期往前推一天
 
 ```javascript
-var offset2 = moment('2017年11月25日', 'YYYY年MM月DD日').add(-1, 'days').format('YYYY年MM月DD日');
-var offset2A = moment('2017年11月25日', 'YYYY年MM月DD日').subtract(1, 'days').format('YYYY年MM月DD日');
+var offset2 = moment('2017年11月25日', 'YYYY年MM月DD日').subtract(1, 'days').format('YYYY年MM月DD日');
+var offset2A = moment('2017年11月25日', 'YYYY年MM月DD日').add(-1, 'days').format('YYYY年MM月DD日');
 console.log('------指定日期往前推一天:', offset2);           // 指定日期往前推一天: 2017年11月24日
 console.log('------指定日期往前推一天:', offset2A);           // 指定日期往前推一天: 2017年11月24日
 console.log(`------指定日期往前推一天:${offset2} 23:59:59`);    // 指定日期往前推一天: 2017年11月24日
