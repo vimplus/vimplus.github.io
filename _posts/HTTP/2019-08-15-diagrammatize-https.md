@@ -16,15 +16,15 @@ pay: true
 
 ## 什么是HTTPS？
 
-HTTPS = HTTP + SSL/TSL，是HTTP协议的安全版。
+HTTPS = HTTP + SSL/TLS，是HTTP协议的安全版。
 
-### SSL/TSL又是什么？
+### SSL/TLS又是什么？
 
 > SSL的全称是Secure Sockets Layer，即安全套接层协议，是为网络通信提供安全及数据完整性的一种安全协议。SSL最新的版本是3.0。
 >
 > TLS的全称是Transport Layer Security，即安全传输层协议，是建立在SSL 3.0协议规范之上，是SSL 3.0的后续版本。
 
-SSL/TSL = 非对称加密（如RSA、ECC） +  对称加密（如AES、DES） +  散列算法（如MD5）
+SSL/TLS = 非对称加密（如RSA、ECC） +  对称加密（如AES、DES） +  散列算法（如MD5）
 
 ## 为什么要用HTTPS？
 
@@ -37,7 +37,7 @@ SSL/TSL = 非对称加密（如RSA、ECC） +  对称加密（如AES、DES） + 
 
 ## 图解文字说明
 
-①：一般【客户端】首先发起请求，例如请求网站https://www.thinktxt.com/, 生成一个随机数（RandomC），携带支持的TSL版本、加密算法等信息发送至【服务端】。
+①：一般【客户端】首先发起请求，例如请求网站[https://www.thinktxt.com/](https://www.thinktxt.com/), 生成一个随机数（RandomC），携带支持的TLS版本、加密算法等信息发送至【服务端】。
 
 ②：【服务端】收到请求，返回证书、一个随机数（RandomS）、协商加密算法。
 
@@ -55,7 +55,7 @@ SSL/TSL = 非对称加密（如RSA、ECC） +  对称加密（如AES、DES） + 
 
 ⑨：验证通过后，开始正常的加密通信。
 
-## 一些要点
+## 一些要点问答
 
 ### 证书从哪申请？需要钱吗？
 
