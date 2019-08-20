@@ -54,7 +54,7 @@ Flex布局方式由 **Flex容器** 和 **Flex项目** 构成：
 
 Flex盒子结构示意图：
 
-![flex-box](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmoy5k8fj30m809q3z1.jpg)
+![flex-box](https://s2.ax1x.com/2019/08/20/mGucRK.jpg)
 
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做`main start`，结束位置叫做`main end`；交叉轴的开始位置叫做`cross start`，结束位置叫做`cross end`。
 
