@@ -100,7 +100,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 }
 ```
 
-![flex-direction](https://ww3.sinaimg.cn/large/006tNbRwgy1fckmorfgowj312k0b8gmj.jpg)
+![flex-direction](https://s2.ax1x.com/2019/08/20/mGJ1Z8.jpg)
 
 包含以下4个值：
 
@@ -113,22 +113,22 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 默认情况下，项目都是尽可能的单行显示，排列在一条“轴线”上，由`flex-wrap`属性控制如何换行。
 
-![flow-wrap_20170209](https://ww4.sinaimg.cn/large/006tNbRwgy1fckmosi24uj30m607o74i.jpg)
+![flow-wrap_20170209](https://s2.ax1x.com/2019/08/20/mGJnxI.jpg)
 
 该属性包含3个值：
 
 * `nowrap`（默认）：不换行。如图：
 
-  ![flow-wrap_ nowrap](https://ww2.sinaimg.cn/large/006tNbRwgy1fckmopkjkuj30z20633z5.jpg)
+  ![flow-wrap_ nowrap](https://s2.ax1x.com/2019/08/20/mGJKMt.jpg)
 
 
 * `wrap`：换行，第一行在上方。如图：
 
-  ![flow-wrap_wrap](https://ww4.sinaimg.cn/large/006tNbRwgy1fckmp9d025j30mk06eaan.jpg)
+  ![flow-wrap_wrap](https://s2.ax1x.com/2019/08/20/mGJMsP.jpg)
 
 * `wrap-reverse`：换行，第一行在下方。如图：
 
-  ![flow-wrap_wrap-reverse](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmp82bpjj30mk06edgf.jpg)
+  ![flow-wrap_wrap-reverse](https://s2.ax1x.com/2019/08/20/mGJQqf.jpg)
 
 #### justify-content
 
@@ -144,7 +144,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 图形示例：
 
-![flex-justify-content](https://ww2.sinaimg.cn/large/006tNbRwgy1fckmootnlnj30ef0ijab4.jpg)
+![flex-justify-content](https://s2.ax1x.com/2019/08/20/mGJ3dS.jpg)
 
 #### align-items
 
@@ -160,7 +160,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 图形示例：
 
-![flex-align-items](https://ww2.sinaimg.cn/large/006tNbRwgy1fckmoogxzlj30e10h6q41.jpg)
+![flex-align-items](https://s2.ax1x.com/2019/08/20/mGJ8Ig.jpg)
 
 #### align-content
 
@@ -179,7 +179,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 图形示例：
 
-![flex-align-content](https://ww4.sinaimg.cn/large/006tNbRwgy1fckmp97ebnj30fc0jgq4i.jpg)
+![flex-align-content](https://s2.ax1x.com/2019/08/20/mGJJiQ.jpg)
 
 ### 项目的属性
 
@@ -236,7 +236,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 效果如图所示：
 
-![flex-order](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmopg8w4j30p004kaag.jpg)
+![flex-order](https://s2.ax1x.com/2019/08/20/mGJYGj.jpg)
 
 #### flex-grow
 
@@ -260,7 +260,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 效果：
 
-![flex-grow](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmotb7tyj30p004nwev.jpg)
+![flex-grow](https://s2.ax1x.com/2019/08/20/mGJtRs.jpg)
 
 如果给其中一个Flex项目设置`flex-grow`的值为`2`，其他都为`1`，那么这个Flex项目 **占据的剩余空间** 将是其他Flex项目2倍，如下：
 
@@ -274,7 +274,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 }
 ```
 
-![flex-grow_02](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmovs4q2j30nm04ejrq.jpg)
+![flex-grow_02](https://s2.ax1x.com/2019/08/20/mGJNzn.jpg)
 
 #### flex-shrink
 
@@ -284,7 +284,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 默认情况下，所有项目的`flex-shrink`属性都为1，当空间不足时，都将等比例缩小，如图：
 
-![flex-shrink_01](https://ww1.sinaimg.cn/large/006tNbRwgy1fckmp8tvisj30p003zq3i.jpg)
+![flex-shrink_01](https://s2.ax1x.com/2019/08/20/mGJaMq.jpg)
 
 如果一个项目的`flex-shrink`属性为0，其他项目都为1，则空间不足时，值为0的项目不缩小，如：
 
@@ -305,7 +305,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 效果图：
 
-![flex-shrink_02](https://ww4.sinaimg.cn/large/006tNbRwgy1fckmou9bv9j30nw04w74y.jpg)
+![flex-shrink_02](https://s2.ax1x.com/2019/08/20/mGJds0.jpg)
 
 #### flex-basis
 
@@ -323,7 +323,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 效果图：
 
-![flex-basis_01](https://ww4.sinaimg.cn/large/006tNbRwgy1fckmp7j5exj30m804twev.jpg)
+![flex-basis_01](https://s2.ax1x.com/2019/08/20/mGJwLV.jpg)
 
 示例二：
 
@@ -339,7 +339,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 效果图：
 
-![flex-basis_02](https://ww3.sinaimg.cn/large/006tNbRwgy1fckmolii2yj30m804t3yw.jpg)
+![flex-basis_02](https://s2.ax1x.com/2019/08/20/mGJBZT.jpg)
 
 #### align-self
 
@@ -351,7 +351,7 @@ Flex是一种单方向的布局概念，认为Flex项目主要排列方式要么
 
 示例：
 
-![flex-align-self](https://ww3.sinaimg.cn/large/006tNbRwgy1fckmoqorqxj30go0bajrs.jpg)
+![flex-align-self](https://s2.ax1x.com/2019/08/20/mGJDdU.jpg)
 
 ## 浏览器兼容前缀
 
