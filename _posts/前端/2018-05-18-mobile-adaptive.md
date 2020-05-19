@@ -204,7 +204,7 @@ pay: true
 
 手淘的`flexible.js`也是`rem`适配的，它是将设备分成`10`份，`1rem`等于`1/10`。分析其中部分代码：
 
-```JavaScript
+```javascript
 var dpr = 0;
 var scale = 0;
 var isIPhone = window.navigator.appVersion.match(/iphone/gi);
@@ -233,7 +233,7 @@ metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + s
 
 以上代码当`dpr`(设备物理像素和设备独立像素比)为`3`时候，页面缩入`1/3,` `dpr`为`2`时，页面绽放`1/2`。
 
-```JavaScript
+```javascript
 function refreshRem(){
     var width = docEl.getBoundingClientRect().width;
     if (width / dpr > 540) {
