@@ -63,7 +63,7 @@ pay: true
 
 `viewport`可以分为三类：`layout viewport` 、 `visual viewport` 和 `ideal viewport` 。
 
-####layout viewport（布局视口）
+#### layout viewport（布局视口）
 
 在移动互联网没有普及之前，大部分Web页面都是基于PC电脑端浏览而设计的，根本没有做移动端的适配。如果在手机上打开PC端的网站，会出现很长的滚动条。随着移动端的发展，为了在手机上能够快速兼容未做适配的PC端Web页面，在小屏幕下也能更好的显示PC端网页，浏览器厂商将`layout viewport`设置的很大，比实际屏幕要宽很多，一般在`768px ~ 1024px` 之间，最常用的宽度就是 `980`，这样用户就能看到绝大部分内容，并根据具体内容选择缩放。
 
@@ -230,6 +230,7 @@ var metaEl = doc.querySelector('meta[name="viewport"]');
 metaEl.setAttribute('name', 'viewport');
 metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
 ```
+
 以上代码当`dpr`(设备物理像素和设备独立像素比)为`3`时候，页面缩入`1/3,` `dpr`为`2`时，页面绽放`1/2`。
 
 ```JavaScript
@@ -250,7 +251,7 @@ refreshRem();
 @function px2rem($px, $base: 75) {
     @return ($px / $base) * 1rem;
 }
-/* 稿子上量得某按钮宽60px,高20px */
+/* 设计稿上量得某个按钮宽60px,高20px */
 .btn{
     width:px2rem(60);
     height:px2rem(20);
