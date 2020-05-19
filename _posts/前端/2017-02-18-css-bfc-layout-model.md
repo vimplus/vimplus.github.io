@@ -117,7 +117,7 @@ W3C规范定义：
 
 如图所示：
 
-![margin-collapse-01](https://ww3.sinaimg.cn/large/006tNbRwgy1fcuoqv0z4mj30cu08c74n.jpg)
+![margin-collapse-01](https://thinktxt.static.lxyour.com/article/margin-collapse-01.jpg)
 
 item元素垂直方向之间的margin值合并了，原本应该是30px，目前只有15px。
 
@@ -145,7 +145,7 @@ item元素垂直方向之间的margin值合并了，原本应该是30px，目前
 
 这样被新BFC元素隔离出来的item就不受外部影响了，离第二个盒子之间的垂直margin距离达到30px，如图：
 
-![margin-collapse-02](https://ww1.sinaimg.cn/large/006tNbRwgy1fcuos8acp0j30bt086dg7.jpg)
+![margin-collapse-02](https://thinktxt.static.lxyour.com/article/margin-collapse-02.jpg)
 
 但是个人觉得没必要这么做，其实一般情况下设置单方向的margin值就好了，比如给item都设置`margin-top:30px;`, 如果觉得第一个元素顶部边距太多可以单独添加`.item:first-child {margin-top:15px;}`，如果大家还有更好的见解也可以提出来讨论。
 
@@ -185,7 +185,7 @@ item元素垂直方向之间的margin值合并了，原本应该是30px，目前
 
 由于子元素浮动导致的父元素高度塌陷，如图：
 
-![float-01](https://ww4.sinaimg.cn/large/006tNbRwgy1fcuoqu3g7sj30b402it8r.jpg)
+![float-01](https://thinktxt.static.lxyour.com/article/float-01.jpg)
 
 #### 解决方案
 
@@ -201,7 +201,7 @@ item元素垂直方向之间的margin值合并了，原本应该是30px，目前
 
 如图，父级高度由子元素撑开了：
 
-![float-02](https://ww2.sinaimg.cn/large/006tNbRwgy1fcuoqrp34vj30ay02kq30.jpg)
+![float-02](https://thinktxt.static.lxyour.com/article/float-02.jpg)
 
 ### 自适应两栏布局
 
@@ -239,7 +239,7 @@ BFC布局规则第三条与第四条：
 
 根据BFC规则第三条体现为：紫色的`main`元素以及绿色的 **浮动** 元素`side`都会紧贴 **wrap的左边** border（由于浮动元素脱离文档流会盖在紫色盒子上面），如图：
 
-![column-layout-01](https://ww3.sinaimg.cn/large/006tNbRwgy1fcuoqsp4m8j309p09qt8r.jpg)
+![column-layout-01](https://thinktxt.static.lxyour.com/article/column-layout-01.jpg)
 
 根据BFC布局规则第四条，我们可以采用给main添加`overflow: hidden;`来触发新的BFC，这样新的BFC元素不会与浮动的side重叠。
 
@@ -251,7 +251,7 @@ BFC布局规则第三条与第四条：
 
 因此会根据父级元素的宽度以及side的宽度，自动变窄，形成侧栏固定，主体自适应宽度布局。如图所示：
 
-![column-layout-02](https://ww2.sinaimg.cn/large/006tNbRwgy1fcuoqs949fj309p09qglo.jpg)
+![column-layout-02](https://thinktxt.static.lxyour.com/article/column-layout-02.jpg)
 
 #### 利用BFC阻止文本环绕
 
@@ -283,11 +283,11 @@ BFC布局规则第三条与第四条：
 
 如图所示：
 
-![image-text-01](https://ww4.sinaimg.cn/large/006tNbRwgy1fcuoqtcrs8j30eb06ot9p.jpg)
+![image-text-01](https://thinktxt.static.lxyour.com/article/image-text-01.jpg)
 
 有时候我们不想要上面的展示，而是下面的效果：
 
-![image-text-02](https://ww2.sinaimg.cn/large/006tNbRwgy1fcuoqwk71fj30eq06ogmm.jpg)
+![image-text-02](https://thinktxt.static.lxyour.com/article/image-text-02.jpg)
 
 那么根据上面所了解的知识，我们可以触发p元素的BFC来形成新的BFC独有区域，不与浮动的图片元素重叠，因此给`.info`添加能触发BFC模式的CSS属性属性即可，这里采用`overflow:hidden;`，你也可以试试别的能够触发BFC的属性：
 
