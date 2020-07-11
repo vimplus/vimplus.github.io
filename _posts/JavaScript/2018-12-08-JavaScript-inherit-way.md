@@ -232,11 +232,11 @@ const person = new Child('张', '小明', 18);
 
 JavaScript的继承方法有很多，从最开始的使用`function`来模拟Java类的语法（如：`new`，`prototype`，`constructor`等），到ES5的`Object.create()`的出现，再到现在ES6的`class`和`extends`语法糖。随着标准的不断提出，也趋向于逐渐更加完善的状态。
 
-不管是哪种方法，归根结底都是**基于原型的继承**，JavaScript的原型链是其中的关键所在。
+不管是哪种方法，归根结底都是**基于原型的继承**，JavaScript的**原型链**是其中的关键所在。
 
 ### 函数声明和类声明的区别
 
-函数声明会提升，类声明不会。首先需要声明你的类，然后访问它，否则会抛出一个`ReferenceError`。
+函数声明**会提升**，类声明**不会提升**。首先需要声明你的类，然后再访问它，否则会抛出一个`ReferenceError`的错误。
 
 ### ES5继承和ES6继承的区别
 
