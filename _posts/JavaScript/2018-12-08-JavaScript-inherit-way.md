@@ -18,7 +18,7 @@ pay: true
 
 ```javascript
 function Parent(addr) {
-    this.lastName = '王';
+    this.surname = '王';
     this.addr = addr;
 }
 
@@ -28,7 +28,7 @@ function Child(name) {
 
 Child.prototype = new Parent('王家村');
 Child.prototype.getName = function () {
-    return this.lastName + this.name;
+    return this.surname + this.name;
 }
 
 
@@ -44,15 +44,15 @@ person.getName();
 
 ```javascript
 function Parent(addr) {
-    this.lastName = '李';
+    this.surname = '李';
     this.addr = addr;
 }
 
-function Child(name, lastName) {
-    Parent.call(this, lastName);
+function Child(name, surname) {
+    Parent.call(this, surname);
     this.name = name;
     this.getName = function () {
-        return this.lastName + this.name;
+        return this.surname + this.name;
     }
 }
 
@@ -208,20 +208,20 @@ MyClass.prototype.addMethod = function() {
 
 ```javascript
 class Parent {
-    constructor(lastName) {
-        this.lastName = lastName;
+    constructor(surname) {
+        this.surname = surname;
     }
 }
 
 class Child extends Parent {
-    constructor(lastName, name, age) {
+    constructor(surname, name, age) {
         // 实质是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this。
-        super(lastName)
+        super(surname)
         this.name = name;
         this.age = age;
     }
     getName() {
-        return this.lastName + this.name;
+        return this.surname + this.name;
     }
 }
 
